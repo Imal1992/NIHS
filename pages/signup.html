@@ -82,33 +82,20 @@
             <h4 class="widget-header"><i class="icon-gift"></i> Create an Account</h4>
             <div class="widget-body">
               <div class="center-align">
-                <form class="form-horizontal form-signin-signup">
-                  <input type="text" name="email" placeholder="First Name">
-                  <input type="text" name="email" placeholder="Last Name">
-                  <input type="text" name="email" placeholder="NTS branch">
-                  <input type="text" name="email" placeholder="Email">
-                  <input type="password" name="password" placeholder="Password">
-                  <input type="password" name="password_confirmation" placeholder="Password Confirmation">
+                <form class="form-horizontal form-signin-signup" action="../backend files/regdata.php" method="post" autocomplete="off">
+                  <input type="text" name="fname" id="fname" placeholder="First Name" required ="required">
+                  <input type="text" name="lname" id="lname" placeholder="Last Name" required ="required">
+                  <input type="text" name="nur_id" id="nur_id" placeholder="Nursing ID" required ="required">
+                  <input type="text" name="email" id="email" placeholder="Email" required ="required">
+                  <input type="password" name="password" id="password" placeholder="Password" required ="required">
+                  <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Password Confirmation" required ="required">
                   <div>
                     <input type="submit" value="Signup" class="btn btn-primary btn-large">
                   </div>
                 </form>
                 <h4><i class="icon-question-sign"></i> Already have an account?</h4>
                 <a href="signin.html" class="btn btn-large bottom-space">Signin</a>
-                <ul class="signin-with-list">
-                  <li>
-                    <a class="btn-facebook">
-                      <i class="icon-facebook icon-large"></i>
-                      Signin with Facebook
-                    </a>
-                  </li>
-                  <li>
-                    <a class="btn-google">
-                      <i class="icon-google-plus icon-large"></i>
-                      Signin with Google
-                    </a>
-                  </li>
-                </ul>
+
               </div>
             </div>
           </div>
