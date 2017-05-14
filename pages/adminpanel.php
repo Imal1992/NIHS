@@ -1,7 +1,11 @@
-<?php session_start();  /* Start of the session */
- if(!isset($_SESSION['isLoggedIn'])){
-	 	header("location: signin.php");
-	 }
+<?php
+
+    session_start();  /* Start of the session */
+
+    //if(!isset($_SESSION['isLoggedIn'])){
+	 	//header("location: signin.php");
+	 //}
+
 ?>
 
 
@@ -22,11 +26,12 @@
     <link href="../css/font-awesome-ie7.css" rel="stylesheet">
     <!-- Bootbusiness theme -->
     <link href="../css/boot-business.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/image.css">
 </head>
 <body>
 
 <?php
-	$uname = $_SESSION['username']; /* Call the session */
+	//$uname = $_SESSION['username']; /* Call the session */
 ?>
 <!-- Start: HEADER -->
 <header>
@@ -93,7 +98,7 @@
 <div class="content">
     <div class="container">
         <!-- Start: Service description -->
-        <article class="article">
+        <!-- <article class="article">
             <div class="row bottom-space">
                 <div class="span12">
                     <div class="page-header">
@@ -150,7 +155,33 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </article> -->
+
+        <div id="maindiv">
+
+            <div id="formdiv">
+                <h2>Multiple Advertisment Upload Form</h2>
+                <form enctype="multipart/form-data" action="" method="post">
+                    First Field is Compulsory. Only JPEG,PNG,JPG Type Image Uploaded. Image Size Should Be Less Than 2MB.
+                    <hr/>
+
+                    <div id="filediv">
+                        <input name="file[]" type="file" id="file"/>
+                    </div>
+
+                    <br/>
+           
+                    <input type="button" id="add_more" class="upload" value="Add More Files"/>
+                    <input type="submit" value="Upload File" name="submit" id="upload" class="upload"/>
+                </form>
+                <br/>
+                <br/>
+                <!-------Including PHP Script here------>
+                <?php include "upload.php"; ?>
+            </div>
+           
+        </div>
+
         <!-- End: Service description -->
     </div>
 </div>
@@ -231,5 +262,6 @@
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/boot-business.js"></script>
+<script src="js/image.js"></script>
 </body>
 </html>
