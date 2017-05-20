@@ -71,7 +71,7 @@ class MySQLDatabase {
     return mysqli_affected_rows($this->connection);
   }
 
-	private function confirm_query($result) {
+    private function confirm_query($result) {
 		if (!$result) {
 	    $output = "Database query failed: " . mysqli_error() . "<br /><br />";
 	    //$output .= "Last SQL query: " . $this->last_query;

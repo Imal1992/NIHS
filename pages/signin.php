@@ -28,7 +28,7 @@ include('../backend files/logincheck.php');
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
-        <a href="index.html" class="brand brand-bootbus">SLNA</a>
+        <a href="index.php" class="brand brand-bootbus">SLNA</a>
         <!-- Below button used for responsive navigation -->
         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
@@ -41,8 +41,8 @@ include('../backend files/logincheck.php');
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="about_us.html">About us</a></li>
-                <li><a href="institutes.html">Institutes</a></li>
+                <li><a href="about_us.php">About us</a></li>
+                <li><a href="institutes.php">Institutes</a></li>
                 <!--<li><a href="product.html">Product3</a></li>-->
                 <!--<li><a href="all_products.html">All products</a></li>             -->
                 <!--<li class="divider"></li>-->
@@ -56,17 +56,17 @@ include('../backend files/logincheck.php');
             <li class="dropdown">
               <a href="#" class="dropdown-toggle active-link" data-toggle="dropdown">Members<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="education.html">Education</a></li>
+                <li><a href="education.php">Education</a></li>
                 <!--<li><a href="resources.html">Resources</a></li>-->
-                <li><a href="news.html">News</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li><a href="news.php">News</a></li>
+                <li><a href="events.php">Events</a></li>
                 <!--<li><a href="blog.html">Blog</a></li>-->
               </ul>
             </li>
-            <li><a href="photo_gallery.html">Photo Gallery</a></li>
-            <li><a href="contact_us.html">Contact us</a></li>
-            <li><a href="signin.html">Sign in</a></li>
-            <li><a href="signup.html">Join now</a></li>
+            <li><a href="photo_gallery.php">Photo Gallery</a></li>
+            <li><a href="contact_us.php">Contact us</a></li>
+            <li><a href="signin.php">Sign in</a></li>
+            <li><a href="signup.php">Join now</a></li>
 
           </ul>
         </div>
@@ -87,8 +87,9 @@ include('../backend files/logincheck.php');
             <h4 class="widget-header"><i class="icon-lock"></i> Signin to SLNA official page</h4>
             <div class="widget-body">
               <div class="center-align">
-                <form class="form-horizontal form-signin-signup" action = "" autocomplete="off">
-                  <input type="text" name="nur_id" id="nur_id" placeholder="Nursing ID" required="required">
+
+                <form method ="post" class="form-horizontal form-signin-signup"  action = "" autocomplete="on">
+                  <input type="text" name="Nur_id"  placeholder="Nursing ID" required="required">
                   <input type="password" name="password" placeholder="Password" required="required">
                   <div class="remember-me">
                     <div class="pull-left">
@@ -101,10 +102,14 @@ include('../backend files/logincheck.php');
                     </div>
                     <div class="clearfix"></div>
                   </div>
-                  <input type="submit" value="Signin" class="btn btn-primary btn-large">
+                  <input type="submit" value="Signin" name="submit" class="btn btn-primary btn-large">
+                  <input type="reset" name="clear" value="Clear" class="btn btn-primary btn-large">
                 </form>
+
+                <span><?php echo $error; ?></span>
+
                 <h4><i class="icon-question-sign"></i> Don't have an account?</h4>
-                <a href="signup.html" class="btn btn-large bottom-space">Signup</a>
+                <a href="signup.php" class="btn btn-large bottom-space">Signup</a>
 
               </div>
             </div>
@@ -121,17 +126,17 @@ include('../backend files/logincheck.php');
         <h4><i class="icon-star icon-white"></i> Home</h4>
         <nav>
           <ul class="quick-links">
-            <li><a href="about_us.html">About us</a></li>
-            <li><a href="institutes.html">Institutes</a></li>
+            <li><a href="about_us.php">About us</a></li>
+            <li><a href="institutes.php">Institutes</a></li>
           </ul>
         </nav>
         <h4><i class="icon-cogs icon-white"></i> Members</h4>
         <nav>
           <ul class="quick-links">
-            <li><a href="education.html">Education</a></li>
-            <!--<li><a href="resources.html">Resources</a></li>-->
-            <li><a href="news.html">News</a></li>
-            <li><a href="events.html">Events</a></li>
+            <li><a href="education.php">Education</a></li>
+            <!--<li><a href="resources.php">Resources</a></li>-->
+            <li><a href="news.php">News</a></li>
+            <li><a href="events.php">Events</a></li>
           </ul>
         </nav>
       </div>
@@ -139,16 +144,16 @@ include('../backend files/logincheck.php');
         <h4><i class="icon-beaker icon-white"></i> About</h4>
         <nav>
           <ul class="quick-links">
-            <li><a href="about_us.html">About us</a></li>
+            <li><a href="about_us.php">About us</a></li>
           </ul>
         </nav>
         <h4><i class="icon-thumbs-up icon-white"></i> Includes</h4>
         <nav>
           <ul class="quick-links">
-            <li><a href="photo_gallery.html">Photo Gallery</a></li>
-            <li><a href="contact_us.html">Contact us</a></li>
-            <li><a href="signin.html">Sign in</a></li>
-            <li><a href="signup.html">Join now</a></li>
+            <li><a href="photo_gallery.php">Photo Gallery</a></li>
+            <li><a href="contact_us.php">Contact us</a></li>
+            <li><a href="signin.php">Sign in</a></li>
+            <li><a href="signup.php">Join now</a></li>
           </ul>
         </nav>
       </div>

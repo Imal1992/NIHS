@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bootbusiness | Short description about company">
-    <meta name="author" content="Imal Thiunuwan">
-    <title>SLNA official site | About us page</title>
+    <meta name="author" content="Your name">
+    <title>SLNA official site | Institutes page</title>
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap responsive -->
@@ -23,7 +23,7 @@
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <div class="container">
-            <a href="index.html" class="brand brand-bootbus">SLNA</a>
+            <a href="index.php" class="brand brand-bootbus">SLNA</a>
             <!-- Below button used for responsive navigation -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
@@ -37,8 +37,8 @@
                   <a href="#" class="dropdown-toggle active-link" data-toggle="dropdown">Home<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <!--<li class="nav-header">PRODUCTS</li>-->
-                    <li><a href="about_us.html">About us</a></li>
-                    <li><a href="institutes.html">Institutes</a></li>
+                    <li><a href="about_us.php">About us</a></li>
+                    <li><a href="institutes.php">Institutes</a></li>
                     <!--<li><a href="product.html">Product3</a></li>-->
                     <!--<li><a href="all_products.html">All products</a></li>             -->
                     <!--<li class="divider"></li>-->
@@ -52,17 +52,18 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="education.html">Education</a></li>
+                    <li><a href="education.php">Education</a></li>
                     <!--<li><a href="resources.html">Resources</a></li>-->
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="news.php">News</a></li>
+                    <li><a href="events.php">Events</a></li>
                     <!--<li><a href="blog.html">Blog</a></li>-->
                   </ul>
                 </li>
-                <li><a href="photo_gallery.html">Photo Gallery</a></li>
-                <li><a href="contact_us.html">Contact us</a></li>
-                <li><a href="signin.html">Sign in</a></li>
-                <li><a href="signup.html">Join now</a></li>
+                <li><a href="photo_gallery.php">Photo Gallery</a></li>
+                <li><a href="contact_us.php">Contact us</a></li>
+                <li><a href="signin.php">Sign in</a></li>
+                <li><a href="signup.php">Join now</a></li>
+
               </ul>
             </div>
           </div>
@@ -72,30 +73,96 @@
     </header>
     <!-- End: HEADER -->
     <!-- Start: Main content -->
-    <div class="content">    
+    <div class="content">     
       <div class="container">
-        <!-- Start: Product description -->
-        <article class="article">
+        <!-- Start: Service description -->
+        <article class="article"> 
           <div class="row bottom-space">
             <div class="span12">
               <div class="page-header">
-                <h1>SLNA <small>Sri Lanka Nurses Association </small></h1>
+                <h1>Service <small>Caption for the service</small></h1>
               </div>
             </div>
             <div class="span12 center-align">
-              <img src="../img/2.jpg" class="thumbnail product-snap">
+              <img src="http://placehold.it/800x300" class="thumbnail product-snap">            
             </div>
           </div>
-          <br class="row">
-            <br class="span10 offset1">
-              Sri Lanka Nurses Association, the only professional organization exists for nurses in Sri Lanka, was established in 1943 as ‘Sri Lanka Trained Nurses Association’ by an English ward sister Ms. L.M. De Silva with 39 members. Ms. L.M. de Silva was the first president, and ward sister Ms. L.S. Jayasinghe was the first secretary of this professional association. The general purpose of establishing this professional body was to contribute to the advancement of nursing profession in Sri Lanka and to draw attention of the public towards this compassionate service.</br>
-              </br>One contributory factor in increasing the membership in this association was awarding the membership to nurses who graduated from School of Nursing, Colombo which was established in 1939. When Ms. M.A. Jenuideen became the president, she represented the association at a of the International Council of Nurses (ICN) held at Stockhome in Sweden in 1949 and obtained the partial membership to the association in ICN. By this time the name of this organization was changed as ‘Ceylon Nurses Association’ (CNA.</br>
-            </br>In 1953, CNA obtained the fully pledged membership of ICN at ICN conference held at Saint Paul in Brazil. As a result of this historical event, members of CAN had the opportunity to productively attend the ICN conferences held, in Rome (1957), in Frankfurt (1965) and Montrial, Canada (1969).</br>
-            </br>In 1960s, CNA was named as ‘Sri Lanka Nurses Association’ (SLNA) in accordance with the language policy of the government. In 1973, SLNA, strengthening its international relations with many organizations, obtained the membership in Commonwealth Nurses’ Federation (CNF ). Today, SLNA representing the interests of all professional nurses in Sri Lanka, continues to be the representative for ICN and CNF. Sri Lanka Nursing Association, from its inception, has been working towards the enhancement of professionalism in nursing and dedicated to the promotion of standards of nursing services.</br>
+          <div class="row bottom-space">
+            <div class="span10 offset1">
+              <p>
+                Detailed description about the service that how it makes the customer's life easy.
+                Detailed description about the service that how it makes the customer's life easy.
+                Detailed description about the service that how it makes the customer's life easy.
+                Detailed description about the service that how it makes the customer's life easy.
+              </p>
+              <p>
+                Detailed description about the service that how it makes the customer's life easy.
+                Detailed description about the service that how it makes the customer's life easy.
+                Detailed description about the service that how it makes the customer's life easy.
+                Detailed description about the service that how it makes the customer's life easy.
+              </p>
+              <p>
+                Detailed description about the service that how it makes the customer's life easy.
+                Detailed description about the service that how it makes the customer's life easy.
+                Detailed description about the service that how it makes the customer's life easy.
+                Detailed description about the service that how it makes the customer's life easy.
+              </p>           
+              <div class="span8 offset1">
+                <h3>Fetures of service</h3>
+                <ul class="features">
+                  <li>
+                    <i class="icon-ok "></i>24 hrs support
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>unlimited download
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>unlimited download
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>unlimited download
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>unlimited download
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>unlimited download
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>unlimited download
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>unlimited download
+                  </li>                  
+                </ul>
+              </div>                                              
+            </div>      
           </div>
-
+          <div class="row">
+            <div class="span10 offset1">
+              <hr>
+              <div class="span3">
+                <p>
+                  Ready to start the innovation?
+                </p>
+                <a class="btn btn-large btn-block" href="#">Try now</a>
+              </div>
+              <div class="span3">
+                <p>
+                  Got confused?
+                </p>
+                <a class="btn btn-large btn-block" href="contact_us.php">Contact us</a>
+              </div>
+              <div class="span3">
+                <p>
+                  Check frequently asked question
+                </p>
+                <a class="btn btn-large btn-block" href="../Additional%20Pages/faq.html">FAQ</a>
+              </div>              
+            </div>
+          </div>
         </article>
-        <!-- End: Product description -->
+        <!-- End: Service description -->
       </div>
     </div>
     <!--</div>-->
@@ -108,17 +175,17 @@
             <h4><i class="icon-star icon-white"></i> Home</h4>
             <nav>
               <ul class="quick-links">
-                <li><a href="about_us.html">About us</a></li>
-                <li><a href="institutes.html">Institutes</a></li>
+                <li><a href="about_us.php">About us</a></li>
+                <li><a href="institutes.php">Institutes</a></li>
               </ul>
             </nav>
             <h4><i class="icon-cogs icon-white"></i> Members</h4>
             <nav>
               <ul class="quick-links">
-                <li><a href="education.html">Education</a></li>
-                <!--<li><a href="resources.html">Resources</a></li>-->
-                <li><a href="news.html">News</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li><a href="education.php">Education</a></li>
+                <!--<li><a href="resources.php">Resources</a></li>-->
+                <li><a href="news.php">News</a></li>
+                <li><a href="events.php">Events</a></li>
               </ul>
             </nav>
           </div>
@@ -126,16 +193,16 @@
             <h4><i class="icon-beaker icon-white"></i> About</h4>
             <nav>
               <ul class="quick-links">
-                <li><a href="about_us.html">About us</a></li>
+                <li><a href="about_us.php">About us</a></li>
               </ul>
             </nav>
             <h4><i class="icon-thumbs-up icon-white"></i> Includes</h4>
             <nav>
               <ul class="quick-links">
-                <li><a href="photo_gallery.html">Photo Gallery</a></li>
-                <li><a href="contact_us.html">Contact us</a></li>
-                <li><a href="signin.html">Sign in</a></li>
-                <li><a href="signup.html">Join now</a></li>
+                <li><a href="photo_gallery.php">Photo Gallery</a></li>
+                <li><a href="contact_us.php">Contact us</a></li>
+                <li><a href="signin.php">Sign in</a></li>
+                <li><a href="signup.php">Join now</a></li>
               </ul>
             </nav>
           </div>

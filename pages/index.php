@@ -23,7 +23,7 @@
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <div class="container">
-            <a href="index.html" class="brand brand-bootbus">SLNA</a>
+            <a href="index.php" class="brand brand-bootbus">SLNA</a>
 
             <!-- Below button used for responsive navigation -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -38,8 +38,8 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <!--<li class="nav-header">PRODUCTS</li>-->
-                    <li><a href="about_us.html">About us</a></li>
-                    <li><a href="institutes.html">Institutes</a></li>
+                    <li><a href="about_us.php">About us</a></li>
+                    <li><a href="institutes.php">Institutes</a></li>
                     <!--<li><a href="product.html">Product3</a></li>-->
                     <!--<li><a href="all_products.html">All products</a></li>-->
                     <!--<li class="divider"></li>-->
@@ -54,17 +54,17 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <!--<li><a href="our_works.html">Our works</a></li>-->
-                    <li><a href="education.html">Education</a></li>
-                    <!--<li><a href="resources.html">Resources</a></li>-->
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="education.php">Education</a></li>
+                    <!--<li><a href="resources.php">Resources</a></li>-->
+                    <li><a href="news.php">News</a></li>
+                    <li><a href="events.php">Events</a></li>
                     <!--<li><a href="blog.html">Blog</a></li>-->
                   </ul>
                 </li>
-                <li><a href="photo_gallery.html">Photo Gallery</a></li>
-                <li><a href="contact_us.html">Contact us</a></li>
-                <li><a href="signin.html">Sign in</a></li>
-                <li><a href="signup.html">Join now</a></li>
+                <li><a href="photo_gallery.php">Photo Gallery</a></li>
+                <li><a href="contact_us.php">Contact us</a></li>
+                <li><a href="signin.php">Sign in</a></li>
+                <li><a href="signup.php">Join now</a></li>
               </ul>
             </div>
           </div>
@@ -156,7 +156,7 @@
           <div class="page-header">
             <h2>Our Mission</h2>
             <h4>Sri Lanka Nursing Association, from its inception, has been working towards the enhancement of professionalism in nursing and dedicated to the promotion of standards of nursing services.</h4>
-            <a href="about_us.html" class="btn">Read more</a>
+            <a href="about_us.php" class="btn">Read more</a>
           </div>
           <div class="row-fluid">
             <ul class="thumbnails">
@@ -259,17 +259,17 @@
             <h4><i class="icon-star icon-white"></i> Home</h4>
             <nav>
               <ul class="quick-links">
-                <li><a href="about_us.html">About us</a></li>
-                <li><a href="institutes.html">Institutes</a></li>
+                <li><a href="about_us.php">About us</a></li>
+                <li><a href="institutes.php">Institutes</a></li>
               </ul>
             </nav>
             <h4><i class="icon-cogs icon-white"></i> Members</h4>
             <nav>
               <ul class="quick-links">
-                <li><a href="education.html">Education</a></li>
-                <!--<li><a href="resources.html">Resources</a></li>-->
-                <li><a href="news.html">News</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li><a href="education.php">Education</a></li>
+                <!--<li><a href="resources.php">Resources</a></li>-->
+                <li><a href="news.php">News</a></li>
+                <li><a href="events.php">Events</a></li>
               </ul>
             </nav>
           </div>
@@ -277,16 +277,16 @@
             <h4><i class="icon-beaker icon-white"></i> About</h4>
             <nav>
               <ul class="quick-links">
-                <li><a href="about_us.html">About us</a></li>
+                <li><a href="about_us.php">About us</a></li>
               </ul>
             </nav>
             <h4><i class="icon-thumbs-up icon-white"></i> Includes</h4>
             <nav>
               <ul class="quick-links">
-                <li><a href="photo_gallery.html">Photo Gallery</a></li>
-                <li><a href="contact_us.html">Contact us</a></li>
-                <li><a href="signin.html">Sign in</a></li>
-                <li><a href="signup.html">Join now</a></li>
+                <li><a href="photo_gallery.php">Photo Gallery</a></li>
+                <li><a href="contact_us.php">Contact us</a></li>
+                <li><a href="signin.php">Sign in</a></li>
+                <li><a href="signup.php">Join now</a></li>
               </ul>
             </nav>
           </div>

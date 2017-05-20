@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ('database.php'); # Import database.php file in to the logincheck.php file.
+include ('database.php'); /* Import database.php file in to the logincheck.php file.*/
 
 $error='';
 
@@ -13,16 +13,16 @@ if (isset($_POST['submit'])){
     }
 	else {
 
-		$Nur_id = $_POST['Nur_id'];
+		$nur_id = $_POST['Nur_id'];
 		$password = $_POST['password'];
-		$password = md5($password);// create an MD5 hash of the password
-		$Type = $_POST['Type'];
+		$password = MD5($password);// create an MD5 hash of the password
+//		$Type = $_POST['Type'];
 
-        $query = "SELECT * FROM UserDetail WHERE Nur_id = '$Nur_id'  AND Password = '$password' AND Type != 'user' "; /* Query to select email address and password for relevant user */
+        $query = "SELECT * FROM userdetail WHERE Nur_id = '{$nur_id}'  AND Password = '{$password}' AND Type != 'some' "; /* Query to select email address and password for relevant user */
         $result = $db->query($query); /* Create the object of the query */
 
 
-		 $rowcount=mysqli_num_rows($result); /* Take the row count for the relevant object */
+		$rowcount=mysqli_num_rows($result); /* Take the row count for the relevant object */
 
 		if($rowcount !=0){
 
@@ -34,7 +34,7 @@ if (isset($_POST['submit'])){
 				$dbname = $row['First_name'];
 				$_SESSION['username']=$dbname; /* Create a session called username */
 
-				$userid = $row['User_ID'];
+				$userid = $row['id'];
 				$_SESSION['usrid']=$userid; /* Create a session called usrid */
 
 			}
@@ -51,7 +51,7 @@ if (isset($_POST['submit'])){
 			$_SESSION['username']=$dbname;
 
 			$_SESSION['isLoggedIn'] = true;
-			header("location: ../pages/userprofile.php"); /* If the session is true redirect to Aftereg.php page */
+			header("Location: ../pages/userprofile.html"); /* If the session is true redirect to Aftereg.php page */
 
 		}
 
@@ -59,13 +59,13 @@ if (isset($_POST['submit'])){
 			$_SESSION['username']=$dbname;
 
 			$_SESSION['adminLoggedIn'] = true;
-			header("location: ../pages/adminPanel.php");  /* If the session is true, redirect to adminPanel.php page */
+			header("Location: ../pages/adminpanel.html");  /* If the session is true, redirect to adminPanel.php page */
 
 		}
 
 
 		else {
-			$error = "Username or Password is invalid for a consumer"; /* If the entered username or password incorrect print this msg  */
+			$error = "Username or Password is invalid for a user"; /* If the entered username or password incorrect print this msg  */
 		}
 		$result->free();
         $error = "<b>Username and Password do not match</b><br/>";  /* If the entered username or password mismatched print this msg  */
