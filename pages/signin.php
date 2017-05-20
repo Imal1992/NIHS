@@ -87,8 +87,8 @@ include('../backend files/logincheck.php');
             <div class="widget-body">
               <div class="center-align">
 
-                <form method ="post" class="form-horizontal form-signin-signup"  action = "" autocomplete="on">
-                  <input type="text" name="Nur_id"  placeholder="Nursing ID" required="required">
+                <form method="post" class="form-horizontal form-signin-signup"  action = "" autocomplete="on">
+                  <input type="text" name="Email_address"  placeholder="Email Address" required="required">
                   <input type="password" name="password" placeholder="Password" required="required">
                   <div class="remember-me">
                     <div class="pull-left">

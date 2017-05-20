@@ -1,40 +1,40 @@
 <?php
+include('database.php'); /* Import database.php file in to the logincheck.php file.*/
 session_start();
-include ('database.php'); /* Import database.php file in to the logincheck.php file.*/
 
 $error='';
 
 
 if (isset($_POST['submit'])){
 
-    if (empty($_POST['Nur_id']) || empty($_POST['password'])){ /* Check whether the entered user name or password is empty */
-		$error = "Nursing ID or Password is invalid";
+    if (empty($_POST['Email_address']) || empty($_POST['password'])){ /* Check whether the entered user name or password is empty */
+		$error = "Email Address or Password is invalid";
 
     }
 	else {
 
-		$nur_id = $_POST['Nur_id'];
+		$Email_address = $_POST['Email_address'];
 		$password = $_POST['password'];
-		$password = MD5($password);// create an MD5 hash of the password
-		$Type = $_POST['Type'];
+//		$password = MD5($password);// create an MD5 hash of the password
+//		$Type = $_POST['Type'];
 
-        $query = "SELECT * FROM userdetail WHERE Nur_id = '{$nur_id}'  AND Password = '{$password}' AND Type != 'some' "; /* Query to select email address and password for relevant user */
+        $query = "SELECT * FROM userdetail WHERE Email_address = '$Email_address'  AND Password = '$password' AND Type = 'user' "; /* Query to select email address and password for relevant user */
         $result = $db->query($query); /* Create the object of the query */
 
 
-		$rowcount=mysqli_num_rows($result); /* Take the row count for the relevant object */
+		$rowcount = mysqli_num_rows($result); /* Take the row count for the relevant object */
 
-		if($rowcount !=0){
+		if($rowcount != 0){
 
 			while($row = mysqli_fetch_assoc($result)){ /* Fetch a result row as an associative array */
 
-				$dbusernurid = $row['Nur_id'];
+				$dbuseremail = $row['Email_address'];
 				$dbpassword = $row['Password'];
 				$Type  = $row['Type'];
 				$dbname = $row['First_name'];
 				$_SESSION['username']=$dbname; /* Create a session called username */
 
-				$userid = $row['id'];
+				$userid = $row['User_ID'];
 				$_SESSION['usrid']=$userid; /* Create a session called usrid */
 
 			}
@@ -55,7 +55,7 @@ if (isset($_POST['submit'])){
 
 		}
 
-		else if ($rowcount == 1 && $Type == 'Admin') {  /* If the rowcount=1 and the type= Admin session username starts */
+		else if ($rowcount != 0 && $Type == 'Admin') {  /* If the rowcount=1 and the type= Admin session username starts */
 			$_SESSION['username']=$dbname;
 
 			$_SESSION['adminLoggedIn'] = true;

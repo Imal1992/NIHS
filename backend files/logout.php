@@ -5,6 +5,6 @@ session_start();  /* Starts a session */
         setcookie(session_name(),'',time()-42000,'/');   /* Set time=-42000 to destroy the session */
     }
     session_destroy();
-header("location: ../pages/signin.html"); /* If the session destroyed redirect to newlog.php */
+header("location: ../pages/signin.php"); /* If the session destroyed redirect to newlog.php */
 exit();
 ?>

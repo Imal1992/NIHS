@@ -10,9 +10,9 @@
 	$nur_id = $_POST['nur_id'];
 	$email = $_POST['email'];
 	$password = $_POST['password'];
-	$password = MD5($password);
-	$password_confirmation = $_POST['password_confirmation'];
-	$password_confirmation = MD5($password_confirmation);
+//	$password = md5($password);
+	$password_confirmation = md5($_POST['password_confirmation']);
+//	$password_confirmation = md5($password_confirmation);
 
 	$query1 = "SELECT * FROM userdetail WHERE Email_address = '{$email}'"; /* query to find the details of user where the the email address is given */
 
