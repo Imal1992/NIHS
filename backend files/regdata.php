@@ -43,7 +43,7 @@
                     $User_ID = $row['id'];
                 }
 
-                header('Location: ../pages/signin.html');
+                header('Location: ../pages/signin.php');
 
 		}
 		else{
