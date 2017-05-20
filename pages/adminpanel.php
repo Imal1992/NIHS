@@ -1,7 +1,11 @@
-<?php session_start();  /* Start of the session */
- if(!isset($_SESSION['isLoggedIn'])){
-	 	header("location: signin.php");
-	 }
+<?php
+
+    session_start();  /* Start of the session */
+
+    //if(!isset($_SESSION['isLoggedIn'])){
+	 	//header("location: signin.php");
+	 //}
+
 ?>
 
 
@@ -12,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bootbusiness | Short description about company">
     <meta name="author" content="Your name">
-    <title>SLNA official site | User-Profile page</title>
+    <title>SLNA official site | Admin panel page</title>
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap responsive -->
@@ -22,11 +26,12 @@
     <link href="../css/font-awesome-ie7.css" rel="stylesheet">
     <!-- Bootbusiness theme -->
     <link href="../css/boot-business.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/image.css">
 </head>
 <body>
 
 <?php
-	$uname = $_SESSION['username']; /* Call the session */
+	//$uname = $_SESSION['username']; /* Call the session */
 ?>
 <!-- Start: HEADER -->
 <header>
@@ -45,12 +50,17 @@
                 <!-- Start: Primary navigation -->
                 <div class="nav-collapse collapse">
                     <ul class="nav pull-right">
-                        <li class="dropdown">
+                        <!-- <li class="dropdown">
                             <a href="#" class="dropdown-toggle active-link" data-toggle="dropdown">Home<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu"> -->
                                 <!--<li class="nav-header">PRODUCTS</li>-->
+<<<<<<< HEAD:pages/adminpanel.php
                                 <li><a href="about_us.php">About us</a></li>
                                 <li><a href="institutes.php">Institutes</a></li>
+=======
+                                <!-- <li><a href="about_us.html">About us</a></li>
+                                <li><a href="institutes.html">Institutes</a></li> -->
+>>>>>>> cc4d5cdb07aee86ebd472d45803ff29a2d290744:pages/adminpanel.php
                                 <!--<li><a href="product.html">Product3</a></li>-->
                                 <!--<li><a href="all_products.html">All products</a></li>             -->
                                 <!--<li class="divider"></li>-->
@@ -59,11 +69,12 @@
                                 <!--<li><a href="service.html">Service2</a></li>-->
                                 <!--<li><a href="service.html">Service3</a></li>-->
                                 <!--<li><a href="all_services.html">All services</a></li>-->
-                            </ul>
+                            <!-- </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
                             <ul class="dropdown-menu">
+<<<<<<< HEAD:pages/adminpanel.php
                                 <li><a href="education.php">Education</a></li>
                                 <!--<li><a href="resources.html">Resources</a></li>-->
                                 <li><a href="news.php">News</a></li>
@@ -76,15 +87,29 @@
                         <li><a href="signin.php">Sign in</a></li>
                         <li><a href="signup.php">Join now</a></li>
 
+=======
+                                <li><a href="education.html">Education</a></li> -->
+                                <!--<li><a href="resources.html">Resources</a></li>-->
+                                <!-- <li><a href="news.html">News</a></li>
+                                <li><a href="events.html">Events</a></li> -->
+                                <!--<li><a href="blog.html">Blog</a></li>-->
+                            <!-- </ul>
+                        </li> -->
+                        <li><a href="#">Post news</a></li>
+                        <li><a href="#">Upload photos</a></li>
+                        <li><a href="#">Add event</a></li>
+                        <li><a href="#">Upload files</a></li>
+                        <li><a href="../backend files/logout.php">Sign Out</a></li>
+>>>>>>> cc4d5cdb07aee86ebd472d45803ff29a2d290744:pages/adminpanel.php
                     </ul>
                 </div>
             </div>
         </div>
 
-        <form id = "Sign_Out" action ="../backend files/logout.php" method = "get">
-            <input type = "submit" value = "Sign Out" id="signoutButton"/>   <!-- Setting logout button-->
+        <!-- <form id = "Sign_Out" action ="../backend files/logout.php" method = "get">
+            <input type = "submit" value = "Sign Out" id="signoutButton"/> -->   <!-- Setting logout button-->
 
-        </form>
+        <!-- </form> -->
     </div>
     <!-- End: Navigation wrapper -->
 </header>
@@ -93,7 +118,7 @@
 <div class="content">
     <div class="container">
         <!-- Start: Service description -->
-        <article class="article">
+        <!-- <article class="article">
             <div class="row bottom-space">
                 <div class="span12">
                     <div class="page-header">
@@ -150,7 +175,33 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </article> -->
+
+        <div id="maindiv">
+
+            <div id="formdiv">
+                <h2>Multiple Advertisment Upload Form</h2>
+                <form enctype="multipart/form-data" action="" method="post">
+                    First Field is Compulsory. Only JPEG,PNG,JPG Type Image Uploaded. Image Size Should Be Less Than 2MB.
+                    <hr/>
+
+                    <div id="filediv">
+                        <input name="file[]" type="file" id="file"/>
+                    </div>
+
+                    <br/>
+           
+                    <input type="button" id="add_more" class="upload" value="Add More Files"/>
+                    <input type="submit" value="Upload File" name="submit" id="upload" class="upload"/>
+                </form>
+                <br/>
+                <br/>
+                <!-------Including PHP Script here------>
+                <?php include "upload.php"; ?>
+            </div>
+           
+        </div>
+
         <!-- End: Service description -->
     </div>
 </div>
@@ -231,5 +282,6 @@
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/boot-business.js"></script>
+<script src="js/image.js"></script>
 </body>
 </html>
