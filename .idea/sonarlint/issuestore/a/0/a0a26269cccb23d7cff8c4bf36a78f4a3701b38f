@@ -1,5 +1,5 @@
 
-\	php:S1192"IDefine a constant instead of duplicating this literal "username" 3 times.(Υ™ϊ»
-h	php:S1192"NDefine a constant instead of duplicating this literal "Email_address" 3 times.(•χό¤8ƒϋ¬Β+
-8php:S125"Remove this commented out code.(πά²8Ζ«Ω¬Β+
 Qphp:S105"EReplace all tab characters in this file by sequences of white-spaces.
+a	php:S1192"NDefine a constant instead of duplicating this literal "Email_address" 3 times.(•χό¤
+\	php:S1192"IDefine a constant instead of duplicating this literal "username" 3 times.(Υ™ϊ»
+1php:S125"Remove this commented out code.(πά²
