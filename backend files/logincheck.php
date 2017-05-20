@@ -16,7 +16,7 @@ if (isset($_POST['submit'])){
 		$nur_id = $_POST['Nur_id'];
 		$password = $_POST['password'];
 		$password = MD5($password);// create an MD5 hash of the password
-//		$Type = $_POST['Type'];
+		$Type = $_POST['Type'];
 
         $query = "SELECT * FROM userdetail WHERE Nur_id = '{$nur_id}'  AND Password = '{$password}' AND Type != 'some' "; /* Query to select email address and password for relevant user */
         $result = $db->query($query); /* Create the object of the query */
@@ -51,7 +51,7 @@ if (isset($_POST['submit'])){
 			$_SESSION['username']=$dbname;
 
 			$_SESSION['isLoggedIn'] = true;
-			header("Location: ../pages/userprofile.html"); /* If the session is true redirect to Aftereg.php page */
+			header("Location: ../pages/userprofile.php"); /* If the session is true redirect to Aftereg.php page */
 
 		}
 
@@ -59,7 +59,7 @@ if (isset($_POST['submit'])){
 			$_SESSION['username']=$dbname;
 
 			$_SESSION['adminLoggedIn'] = true;
-			header("Location: ../pages/adminpanel.html");  /* If the session is true, redirect to adminPanel.php page */
+			header("Location: ../pages/adminpanel.php");  /* If the session is true, redirect to adminPanel.php page */
 
 		}
 

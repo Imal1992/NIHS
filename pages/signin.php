@@ -1,6 +1,5 @@
 <?php
 include('../backend files/logincheck.php');
-
 ?>
 
 <!DOCTYPE html>
