@@ -50,57 +50,11 @@
                 <!-- Start: Primary navigation -->
                 <div class="nav-collapse collapse">
                     <ul class="nav pull-right">
-                        <!-- <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active-link" data-toggle="dropdown">Home<b class="caret"></b></a>
-                            <ul class="dropdown-menu"> -->
-                                <!--<li class="nav-header">PRODUCTS</li>-->
-<<<<<<< HEAD:pages/adminpanel.php
-                                <li><a href="about_us.php">About us</a></li>
-                                <li><a href="institutes.php">Institutes</a></li>
-=======
-                                <!-- <li><a href="about_us.html">About us</a></li>
-                                <li><a href="institutes.html">Institutes</a></li> -->
->>>>>>> cc4d5cdb07aee86ebd472d45803ff29a2d290744:pages/adminpanel.php
-                                <!--<li><a href="product.html">Product3</a></li>-->
-                                <!--<li><a href="all_products.html">All products</a></li>             -->
-                                <!--<li class="divider"></li>-->
-                                <!--<li class="nav-header">SERVICES</li>-->
-                                <!--<li><a href="service.html">Service1</a></li>-->
-                                <!--<li><a href="service.html">Service2</a></li>-->
-                                <!--<li><a href="service.html">Service3</a></li>-->
-                                <!--<li><a href="all_services.html">All services</a></li>-->
-                            <!-- </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-<<<<<<< HEAD:pages/adminpanel.php
-                                <li><a href="education.php">Education</a></li>
-                                <!--<li><a href="resources.html">Resources</a></li>-->
-                                <li><a href="news.php">News</a></li>
-                                <li><a href="events.php">Events</a></li>
-                                <!--<li><a href="blog.html">Blog</a></li>-->
-                            </ul>
-                        </li>
-                        <li><a href="photo_gallery.php">Photo Gallery</a></li>
-                        <li><a href="contact_us.php">Contact us</a></li>
-                        <li><a href="signin.php">Sign in</a></li>
-                        <li><a href="signup.php">Join now</a></li>
-
-=======
-                                <li><a href="education.html">Education</a></li> -->
-                                <!--<li><a href="resources.html">Resources</a></li>-->
-                                <!-- <li><a href="news.html">News</a></li>
-                                <li><a href="events.html">Events</a></li> -->
-                                <!--<li><a href="blog.html">Blog</a></li>-->
-                            <!-- </ul>
-                        </li> -->
                         <li><a href="#">Post news</a></li>
                         <li><a href="#">Upload photos</a></li>
                         <li><a href="#">Add event</a></li>
                         <li><a href="#">Upload files</a></li>
                         <li><a href="../backend files/logout.php">Sign Out</a></li>
->>>>>>> cc4d5cdb07aee86ebd472d45803ff29a2d290744:pages/adminpanel.php
                     </ul>
                 </div>
             </div>
