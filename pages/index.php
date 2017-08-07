@@ -83,14 +83,13 @@
               <div class="active item">
                 <div class="hero-unit">
                   <div class="row-fluid">
-                    <div class="span5 marketting-info">
-                      <h1>TELL ABOUT YOUR BUSINESS AND CORPORATE.</h1>
+<!--                     <div class="span5 marketting-info">
+                      <h1>PERSONNAL SHORTCODE</h1>
                       <p>
-                        We are Bootbusiness and we are awesome.We solve your technology problems by our awesome products.
-                        We are Bootbusiness and we are awesome.We solve your technology problems by our awesome products.
-                      </p>
-                    </div>
-                    <div class="span7">
+
+                           Cursus Ornare Amet Parturient</p>
+                    </div> -->
+                    <div class="span12">
                       <img src="../img/1.jpg" class="thumbnail">
                     </div>
                   </div>                  
@@ -99,14 +98,14 @@
               <div class="item">
                 <div class="hero-unit">
                   <div class="row-fluid">
-                    <div class="span5 marketting-info">
+<!--                     <div class="span5 marketting-info">
                       <h1>TELL ABOUT YOUR NATURE OF WORK</h1>
                       <p>
                         We are Bootbusiness and we design ultimate website applications.
                         We are Bootbusiness and we design ultimate website applications.
                       </p>
-                    </div>
-                    <div class="span7">
+                    </div> -->
+                    <div class="span12">
                       <img src="../img/1.jpg" class="thumbnail">
                     </div>
                   </div>                  
@@ -115,14 +114,14 @@
               <div class="item">
                 <div class="hero-unit">
                   <div class="row-fluid">
-                    <div class="span5 marketting-info">
+<!--                     <div class="span5 marketting-info">
                       <h1>TELL ABOUT YOUR PRODUCT</h1>
                       <p>
                         Get excited about our products.We build awesome products in mobile.
                         We build awesome products in mobile.We build awesome products in mobile.
                       </p>
-                    </div>
-                    <div class="span7">
+                    </div> -->
+                    <div class="span12">
                       <img src="../img/1.jpg" class="thumbnail">
                     </div>
                   </div>                  
@@ -131,14 +130,14 @@
               <div class="item">
                 <div class="hero-unit">
                   <div class="row-fluid">
-                    <div class="span5 marketting-info">
+<!--                     <div class="span5 marketting-info">
                       <h1>TELL ABOUT YOUR ANOTHER PRODUCT</h1>
                       <p>
                         Get excited about our products.We build awesome products in mobile.
                         We build awesome products in mobile.We build awesome products in mobile.
                       </p>
-                    </div>
-                    <div class="span7">
+                    </div> -->
+                    <div class="span12">
                       <img src="../img/1.jpg" class="thumbnail">
                     </div>
                   </div>                  
@@ -153,11 +152,13 @@
       <!-- End: slider -->
       <!-- Start: OUR MISSION -->
         <div class="container">
-          <div class="page-header">
-            <h2>Our Mission</h2>
-            <h4>Sri Lanka Nursing Association, from its inception, has been working towards the enhancement of professionalism in nursing and dedicated to the promotion of standards of nursing services.</h4>
-            <a href="about_us.php" class="btn">Read more</a>
-          </div>
+          <div class="span10">
+            <div class="page-header">
+              <h2>Our Mission</h2>
+              <p>Sri Lanka Nursing Association, from its inception, has been working towards the enhancement of professionalism in nursing and dedicated to the promotion of standards of nursing services.</p>
+              <a href="about_us.php" class="btn">Read more</a>
+            </div>
+          </div>  
           <div class="row-fluid">
             <ul class="thumbnails">
               <li class="span4">

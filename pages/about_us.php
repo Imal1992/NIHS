@@ -87,13 +87,14 @@
             </div>
           </div>
           <br class="row">
+          <div class="span12 justify">
             <br class="span10 offset1">
               Sri Lanka Nurses Association, the only professional organization exists for nurses in Sri Lanka, was established in 1943 as ‘Sri Lanka Trained Nurses Association’ by an English ward sister Ms. L.M. De Silva with 39 members. Ms. L.M. de Silva was the first president, and ward sister Ms. L.S. Jayasinghe was the first secretary of this professional association. The general purpose of establishing this professional body was to contribute to the advancement of nursing profession in Sri Lanka and to draw attention of the public towards this compassionate service.</br>
               </br>One contributory factor in increasing the membership in this association was awarding the membership to nurses who graduated from School of Nursing, Colombo which was established in 1939. When Ms. M.A. Jenuideen became the president, she represented the association at a of the International Council of Nurses (ICN) held at Stockhome in Sweden in 1949 and obtained the partial membership to the association in ICN. By this time the name of this organization was changed as ‘Ceylon Nurses Association’ (CNA.</br>
             </br>In 1953, CNA obtained the fully pledged membership of ICN at ICN conference held at Saint Paul in Brazil. As a result of this historical event, members of CAN had the opportunity to productively attend the ICN conferences held, in Rome (1957), in Frankfurt (1965) and Montrial, Canada (1969).</br>
             </br>In 1960s, CNA was named as ‘Sri Lanka Nurses Association’ (SLNA) in accordance with the language policy of the government. In 1973, SLNA, strengthening its international relations with many organizations, obtained the membership in Commonwealth Nurses’ Federation (CNF ). Today, SLNA representing the interests of all professional nurses in Sri Lanka, continues to be the representative for ICN and CNF. Sri Lanka Nursing Association, from its inception, has been working towards the enhancement of professionalism in nursing and dedicated to the promotion of standards of nursing services.</br>
           </div>
-
+          </div>
         </article>
         <!-- End: Product description -->
       </div>

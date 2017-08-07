@@ -80,86 +80,82 @@
           <div class="row bottom-space">
             <div class="span12">
               <div class="page-header">
-                <h1>Service <small>Caption for the service</small></h1>
+                <h1>Institutes <small>Nurses Training Schools - Sri Lanka</small></h1>
               </div>
             </div>
             <div class="span12 center-align">
-              <img src="http://placehold.it/800x300" class="thumbnail product-snap">            
+              <img src="../img/25.jpg" class="thumbnail product-snap">            
             </div>
           </div>
           <div class="row bottom-space">
             <div class="span10 offset1">
-              <p>
-                Detailed description about the service that how it makes the customer's life easy.
-                Detailed description about the service that how it makes the customer's life easy.
-                Detailed description about the service that how it makes the customer's life easy.
-                Detailed description about the service that how it makes the customer's life easy.
-              </p>
-              <p>
-                Detailed description about the service that how it makes the customer's life easy.
-                Detailed description about the service that how it makes the customer's life easy.
-                Detailed description about the service that how it makes the customer's life easy.
-                Detailed description about the service that how it makes the customer's life easy.
-              </p>
-              <p>
-                Detailed description about the service that how it makes the customer's life easy.
-                Detailed description about the service that how it makes the customer's life easy.
-                Detailed description about the service that how it makes the customer's life easy.
-                Detailed description about the service that how it makes the customer's life easy.
-              </p>           
-              <div class="span8 offset1">
-                <h3>Fetures of service</h3>
+              <div class="span10 offset1">
+                <h2>﻿Nurses Training Schools</h2>
+                <div class="span4">
                 <ul class="features">
                   <li>
-                    <i class="icon-ok "></i>24 hrs support
+                    <i class="icon-ok "></i>NTS-Anuradhapura
                   </li>
                   <li>
-                    <i class="icon-ok "></i>unlimited download
+                    <i class="icon-ok "></i>NTS-Ampara
                   </li>
                   <li>
-                    <i class="icon-ok "></i>unlimited download
+                    <i class="icon-ok "></i>NTS-Badulla
                   </li>
                   <li>
-                    <i class="icon-ok "></i>unlimited download
+                    <i class="icon-ok "></i>NTS-Batticaloa
                   </li>
                   <li>
-                    <i class="icon-ok "></i>unlimited download
+                    <i class="icon-ok "></i><a href="http://lankabusinesspages.com/ntscolombo/">NTS-Colombo (School of Nursing, Colombo)</a> 
                   </li>
                   <li>
-                    <i class="icon-ok "></i>unlimited download
+                    <i class="icon-ok "></i>NTS-Galle
                   </li>
                   <li>
-                    <i class="icon-ok "></i>unlimited download
+                    <i class="icon-ok "></i>NTS-Hambantota
                   </li>
                   <li>
-                    <i class="icon-ok "></i>unlimited download
-                  </li>                  
+                    <i class="icon-ok "></i>NTS-Jaffna
+                  </li>
+                   <li>
+                    <i class="icon-ok "></i>Post Basic School of Nursing, Colombo
+                  </li>                                   
                 </ul>
+                </div>
+                <div class="span4">
+                <ul class="features">
+                  <li>
+                    <i class="icon-ok "></i>NTS-Jayawardanapura
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>NTS-Kalutara
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>NTS-Kandana
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>NTS-Kurunegala
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i><a href="http://www.ntskandy.net/">NTS-Kandy </a> 
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>NTS-Matara
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>NTS-Mulleriyawa
+                  </li>
+                  <li>
+                    <i class="icon-ok "></i>NTS-Ratnapura
+                  </li> 
+                  <li>
+                    <i class="icon-ok "></i>NTS-Vavuniya
+                  </li>                 
+                </ul>
+                </div>
+                </div>
               </div>                                              
             </div>      
-          </div>
-          <div class="row">
-            <div class="span10 offset1">
-              <hr>
-              <div class="span3">
-                <p>
-                  Ready to start the innovation?
-                </p>
-                <a class="btn btn-large btn-block" href="#">Try now</a>
-              </div>
-              <div class="span3">
-                <p>
-                  Got confused?
-                </p>
-                <a class="btn btn-large btn-block" href="contact_us.php">Contact us</a>
-              </div>
-              <div class="span3">
-                <p>
-                  Check frequently asked question
-                </p>
-                <a class="btn btn-large btn-block" href="../Additional%20Pages/faq.html">FAQ</a>
-              </div>              
-            </div>
           </div>
         </article>
         <!-- End: Service description -->
