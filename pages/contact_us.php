@@ -110,56 +110,38 @@
           <!-- Start: OFFICES -->
           <div class="span5 offset1">
             <div class="page-header">
-              <h2>Offices</h2>
+              <h2>Useful Links</h2>
             </div>
-            <h3>North America</h3>
+            <h3>Ministry of Health</h3>
             <div>
               <address class="pull-left">
-                <strong>Bootbusiness, Inc.</strong><br>
-                123 Folsom Ave, Suite 600<br>
-                USA<br>
+                <a href="www.health.gov.lk/en"><strong>Ministry of Health</strong></a><br>
+                 385, Ven. Baddegama Wimalawansa<br> Thero Mawatha, Colombo 10<br>
               </address>
               <div class="pull-right">
                 <div class="bottom-space">
-                  <i class="icon-phone icon-large"></i> (123) 123-1234
+                  <i class="icon-phone icon-large"></i> 011 2 675449
                 </div>
-                <a href="mailto:contact@bootbusiness.com" class="contact-mail">
+                <a href="mailto:postmaster@health.gov.lk." class="contact-mail">
                   <i class="icon-envelope icon-large"></i>
-                </a> contact@bootbusiness.com
+                </a> postmaster@health.gov.lk.
               </div>
               <div class="clearfix"></div>
             </div>
-            <h3>Europe</h3>
+            <h3>National Hospital of Sri Lanka (NHSL)</h3>
             <div>
               <address class="pull-left">
-                <strong>Bootbusiness, Inc.</strong><br>
-                123 Folsom Ave, Suite 600<br>
-                UK<br>
+                <a href="http://www.nhsl.health.gov.lk/web/index.php?lang=en"><strong>National Hospital of Sri Lanka (NHSL)</strong></a><br>
+                E W Perera Mawatha,Colombo 07,<br>
+                Sri Lanka<br>
               </address>
               <div class="pull-right">
                 <div class="bottom-space">
-                  <i class="icon-phone icon-large"></i> (123) 123-1234
+                  <i class="icon-phone icon-large"></i> Telephone : +9411-2691111
                 </div>
-                <a href="mailto:contact@bootbusiness.com" class="contact-mail">
-                  <i class="icon-envelope icon-large"></i>
-                </a> contact@bootbusiness.com
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <h3>Asia</h3>
-            <div>
-              <address class="pull-left">
-                <strong>Bootbusiness, Inc.</strong><br>
-                123 Folsom Ave, Suite 600<br>
-                India<br>
-              </address>
-              <div class="pull-right">
                 <div class="bottom-space">
-                  <i class="icon-phone icon-large"></i> (123) 123-1234
+                  <i class="icon-phone icon-large"></i> Fax : +9411-2698443
                 </div>
-                <a href="mailto:contact@bootbusiness.com" class="contact-mail">
-                  <i class="icon-envelope icon-large"></i>
-                </a> contact@bootbusiness.com
               </div>
               <div class="clearfix"></div>
             </div>
