@@ -19,10 +19,13 @@ if (isset($_POST['submit'])){
 //		$Type = $_POST['Type'];
 
         $query = "SELECT * FROM userdetail WHERE Email_address = '$Email_address'  AND Password = '$password' AND Type = 'user' "; /* Query to select email address and password for relevant user */
+        $query1 = "SELECT * FROM userdetail WHERE Email_address = '$Email_address'  AND Password = '$password' AND Type = 'Admin' "; /* Query to select email address and password for relevant user */
         $result = $db->query($query); /* Create the object of the query */
+        $result1 = $db->query($query1); /* Create the object of the query */
 
 
 		$rowcount = mysqli_num_rows($result); /* Take the row count for the relevant object */
+		$rowcount1 = mysqli_num_rows($result1); /* Take the row count for the relevant object */
 
 		if($rowcount != 0){
 
@@ -54,8 +57,11 @@ if (isset($_POST['submit'])){
 			header("Location: ../pages/userprofile.php"); /* If the session is true redirect to Aftereg.php page */
 
 		}
+		else {
+			$error = "Username or Password is invalid for a user"; /* If the entered username or password incorrect print this msg  */
+		}
 
-		else if ($rowcount != 0 && $Type == 'Admin') {  /* If the rowcount=1 and the type= Admin session username starts */
+		if ($rowcount1 == 1) {  /* If the rowcount=1 and the type= Admin session username starts */
 			$_SESSION['username']=$dbname;
 
 			$_SESSION['adminLoggedIn'] = true;
@@ -65,7 +71,7 @@ if (isset($_POST['submit'])){
 
 
 		else {
-			$error = "Username or Password is invalid for a user"; /* If the entered username or password incorrect print this msg  */
+			$error = "Username or Password is invalid for a admin"; /* If the entered username or password incorrect print this msg  */
 		}
 		$result->free();
         $error = "<b>Username and Password do not match</b><br/>";  /* If the entered username or password mismatched print this msg  */

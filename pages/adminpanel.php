@@ -2,9 +2,9 @@
 
     session_start();  /* Start of the session */
 
-    //if(!isset($_SESSION['isLoggedIn'])){
-	 	//header("location: signin.php");
-	 //}
+    if(!isset($_SESSION['adminLoggedIn'])){
+	 	header("location: signin.php");
+	}
 
 ?>
 
