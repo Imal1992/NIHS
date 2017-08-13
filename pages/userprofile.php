@@ -44,44 +44,29 @@
                 </button>
                 <!-- Start: Primary navigation -->
                 <div class="nav-collapse collapse">
-                    <!-- <ul class="nav pull-right">
+                     <ul class="nav pull-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle active-link" data-toggle="dropdown">Home<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <!--<li class="nav-header">PRODUCTS</li>-->
-                                <!-- <li><a href="about_us.php">About us</a></li>
-                                <li <!-><a href="institutes.php">Institutes</a></li> -->
-                                <!--<li><a href="product.html">Product3</a></li>-->
-                                <!--<li><a href="all_products.html">All products</a></li>             -->
-                                <!--<li class="divider"></li>-->
-                                <!--<li class="nav-header">SERVICES</li>-->
-                                <!--<li><a href="service.html">Service1</a></li>-->
-                                <!--<li><a href="service.html">Service2</a></li>-->
-                                <!--<li><a href="service.html">Service3</a></li>-->
-                                <!--<li><a href="all_services.html">All services</a></li>-->
-                      <!--       </ul>
+                                <li class="nav-header">PRODUCTS</li>
+                                <li><a href="about_us.php">About us</a></li>
+                                <li <!-><a href="institutes.php">Institutes</a></li>
+                               
+                            </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="education.php">Education</a></li>
-                                <!--<li><a href="resources.html">Resources</a></li>-->
-                                <!-- <li><a href="news.php">News</a></li>
-                                <li><a href="events.php">Events</a></li> -->
-                                <!--<li><a href="blog.html">Blog</a></li>-->
-                           <!--  </ul>
+                            </ul>
                         </li>
                         <li><a href="photo_gallery.php">Photo Gallery</a></li>
                         <li><a href="contact_us.php">Contact us</a></li>
                         <li><a href="signin.php">Sign in</a></li>
                         <li><a href="signup.php">Join now</a></li>
+                        <li><a href="../backend files/logout.php">Sign Out</a></li>
 
-                    --> <!-- </ul> -->
-
-                    <form id = "Sign_Out" action ="../backend files/logout.php" method = "get">
-                        <input type = "submit" value = "Sign Out" id="signoutButton"/>   <!-- Setting logout button-->
-
-                    </form>
+                    </ul>
 
                 </div>
             </div>

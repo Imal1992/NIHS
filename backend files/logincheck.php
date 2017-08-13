@@ -15,7 +15,7 @@ if (isset($_POST['submit'])){
 
 		$Email_address = $_POST['Email_address'];
 		$password = $_POST['password'];
-//		$password = MD5($password);// create an MD5 hash of the password
+		$password = MD5($password);// create a MD5 hash of the password
 //		$Type = $_POST['Type'];
 
         $query = "SELECT * FROM userdetail WHERE Email_address = '$Email_address'  AND Password = '$password' AND Type = 'user' "; /* Query to select email address and password for relevant user */
@@ -32,7 +32,8 @@ if (isset($_POST['submit'])){
 			while($row = mysqli_fetch_assoc($result)){ /* Fetch a result row as an associative array */
 
 				$dbuseremail = $row['Email_address'];
-				$dbpassword = $row['Password'];
+				$dbpassword = crypt($row['Password']);
+
 				$Type  = $row['Type'];
 				$dbname = $row['First_name'];
 				$_SESSION['username']=$dbname; /* Create a session called username */

@@ -30,6 +30,8 @@
 	if(mysqli_num_rows($result1)==0){ /* Take the rowcount of the result */
 		if($nur_id_unique){
 		    if($password == $password_confirmation){
+		    	$password = MD5($password);
+		    	$password_confirmation = MD5($password_confirmation);
                 $query3 = "INSERT INTO userdetail ( Type, First_name, Last_name, Nur_id, Email_address, Password, password_confirmation)
                            VALUES ( '{$Type}', '{$fname}', '{$lname}', '{$nur_id}', '{$email}', '{$password}', '{$password_confirmation}')";
                 $result=$db->query($query3);  /* Insert in to the table called userdetail */
