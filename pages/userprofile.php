@@ -44,13 +44,13 @@
                 </button>
                 <!-- Start: Primary navigation -->
                 <div class="nav-collapse collapse">
-                    <ul class="nav pull-right">
+                    <!-- <ul class="nav pull-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle active-link" data-toggle="dropdown">Home<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <!--<li class="nav-header">PRODUCTS</li>-->
-                                <li><a href="about_us.php">About us</a></li>
-                                <li><a href="institutes.php">Institutes</a></li>
+                                <!-- <li><a href="about_us.php">About us</a></li>
+                                <li <!-><a href="institutes.php">Institutes</a></li> -->
                                 <!--<li><a href="product.html">Product3</a></li>-->
                                 <!--<li><a href="all_products.html">All products</a></li>             -->
                                 <!--<li class="divider"></li>-->
@@ -59,32 +59,35 @@
                                 <!--<li><a href="service.html">Service2</a></li>-->
                                 <!--<li><a href="service.html">Service3</a></li>-->
                                 <!--<li><a href="all_services.html">All services</a></li>-->
-                            </ul>
+                      <!--       </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="education.php">Education</a></li>
                                 <!--<li><a href="resources.html">Resources</a></li>-->
-                                <li><a href="news.php">News</a></li>
-                                <li><a href="events.php">Events</a></li>
+                                <!-- <li><a href="news.php">News</a></li>
+                                <li><a href="events.php">Events</a></li> -->
                                 <!--<li><a href="blog.html">Blog</a></li>-->
-                            </ul>
+                           <!--  </ul>
                         </li>
                         <li><a href="photo_gallery.php">Photo Gallery</a></li>
                         <li><a href="contact_us.php">Contact us</a></li>
                         <li><a href="signin.php">Sign in</a></li>
                         <li><a href="signup.php">Join now</a></li>
 
-                    </ul>
+                    --> <!-- </ul> -->
+
+                    <form id = "Sign_Out" action ="../backend files/logout.php" method = "get">
+                        <input type = "submit" value = "Sign Out" id="signoutButton"/>   <!-- Setting logout button-->
+
+                    </form>
+
                 </div>
             </div>
         </div>
 
-        <form id = "Sign_Out" action ="../backend files/logout.php" method = "get">
-            <input type = "submit" value = "Sign Out" id="signoutButton"/>   <!-- Setting logout button-->
 
-        </form>
     </div>
     <!-- End: Navigation wrapper -->
 </header>
@@ -106,24 +109,7 @@
             </div>
             <div class="row bottom-space">
                 <div class="span10 offset1">
-                    <p>
-                        Detailed description about the service that how it makes the customer's life easy.
-                        Detailed description about the service that how it makes the customer's life easy.
-                        Detailed description about the service that how it makes the customer's life easy.
-                        Detailed description about the service that how it makes the customer's life easy.
-                    </p>
-                    <p>
-                        Detailed description about the service that how it makes the customer's life easy.
-                        Detailed description about the service that how it makes the customer's life easy.
-                        Detailed description about the service that how it makes the customer's life easy.
-                        Detailed description about the service that how it makes the customer's life easy.
-                    </p>
-                    <p>
-                        Detailed description about the service that how it makes the customer's life easy.
-                        Detailed description about the service that how it makes the customer's life easy.
-                        Detailed description about the service that how it makes the customer's life easy.
-                        Detailed description about the service that how it makes the customer's life easy.
-                    </p>
+
 
                 </div>
             </div>
@@ -160,64 +146,6 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="span2">
-                <h4><i class="icon-star icon-white"></i> Home</h4>
-                <nav>
-                    <ul class="quick-links">
-                        <li><a href="about_us.php">About us</a></li>
-                        <li><a href="institutes.php">Institutes</a></li>
-                    </ul>
-                </nav>
-                <h4><i class="icon-cogs icon-white"></i> Members</h4>
-                <nav>
-                    <ul class="quick-links">
-                        <li><a href="education.php">Education</a></li>
-                        <!--<li><a href="resources.html">Resources</a></li>-->
-                        <li><a href="news.php">News</a></li>
-                        <li><a href="events.php">Events</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="span2">
-                <h4><i class="icon-beaker icon-white"></i> About</h4>
-                <nav>
-                    <ul class="quick-links">
-                        <li><a href="about_us.php">About us</a></li>
-                    </ul>
-                </nav>
-                <h4><i class="icon-thumbs-up icon-white"></i> Includes</h4>
-                <nav>
-                    <ul class="quick-links">
-                        <li><a href="photo_gallery.php">Photo Gallery</a></li>
-                        <li><a href="contact_us.php">Contact us</a></li>
-                        <li><a href="signin.php">Sign in</a></li>
-                        <li><a href="signup.php">Join now</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="span3">
-                <h4>Get in touch</h4>
-                <div class="social-icons-row">
-                    <a href="#"><i class="icon-twitter"></i></a>
-                    <a href="#"><i class="icon-facebook"></i></a>
-                    <a href="#"><i class="icon-linkedin"></i></a>
-                </div>
-                <div class="social-icons-row">
-                    <a href="#"><i class="icon-google-plus"></i></a>
-                    <a href="#"><i class="icon-github"></i></a>
-                    <a href="mailto:nts@gmail.com"><i class="icon-envelope"></i></a>
-                </div>
-                <div class="social-icons-row">
-                    <i class="icon-phone icon-large phone-number"></i> +94 11 2 825409
-                </div>
-            </div>
-            <div class="span3">
-                <h4>Get updated by email</h4>
-                <form>
-                    <input type="text" name="email" placeholder="Email address">
-                    <input type="submit" class="btn btn-primary" value="Subscribe">
-                </form>
-            </div>
         </div>
     </div>
     <hr class="footer-divider">

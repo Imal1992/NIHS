@@ -34,7 +34,7 @@
                            VALUES ( '{$Type}', '{$fname}', '{$lname}', '{$nur_id}', '{$email}', '{$password}', '{$password_confirmation}')";
                 $result=$db->query($query3);  /* Insert in to the table called userdetail */
             }
-            else{
+            else if ($password != $password_confirmation){
                 echo "Passwords do not match";
             }
                 $query4 = "SELECT id FROM userdetail WHERE Email_address = '{$email}'";
