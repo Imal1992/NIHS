@@ -1,14 +1,3 @@
-<?php
-
-    session_start();  /* Start of the session */
-
-    if(!isset($_SESSION['adminLoggedIn'])){
-	 	header("location: signin.php");
-	}
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bootbusiness | Short description about company">
     <meta name="author" content="Your name">
-    <title>SLNA official site | Admin panel page</title>
+    <title>SLNA official site | Admin panel image upload page</title>
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap responsive -->
@@ -134,8 +123,25 @@
         <div id="maindiv">
 
             <div id="formdiv">
-                <h2>News Upload Form</h2>
-                
+                <h2>Photo Upload Form</h2>
+                <form enctype="multipart/form-data" action="" method="post">
+                    <!-- First Field is Compulsory. Only JPEG,PNG,JPG Type Image Uploaded.  -->
+                    Image Size Should Be Less Than 2MB.
+                    <hr/>
+
+                    <div id="filediv">
+                        <input name="files[]" type="file" id="file"/>
+                    </div>
+
+                    <br/>
+           
+                    <!-- <input type="button" id="add_more" class="upload" value="Add More Photos"/> -->
+                    <input type="submit" value="Upload Photos" name="submit" id="upload" class="upload"/>
+                </form>
+                <br/>
+                <br/>
+                <!-------Including PHP Script here------>
+                <?php include "upload.php"; ?>
             </div>
            
         </div>
