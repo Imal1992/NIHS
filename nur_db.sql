@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 17, 2017 at 05:46 PM
+-- Generation Time: Aug 22, 2017 at 06:21 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -19,6 +19,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `nur_db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `post_news`
+--
+
+CREATE TABLE `post_news` (
+  `File_id` int(10) NOT NULL,
+  `File_name` varchar(100) NOT NULL,
+  `File_size` varchar(50) NOT NULL,
+  `File_type` varchar(50) NOT NULL,
+  `News` varchar(1000) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `post_news`
+--
+
+INSERT INTO `post_news` (`File_id`, `File_name`, `File_size`, `File_type`, `News`) VALUES
+(1, '0abap programs.PNG', '14349', 'image/png', 'rrrrrrrrrrrrrrrrrrrrrrrr'),
+(2, '0abap programs.PNG', '14349', 'image/png', 'rrrrrrrrrrrrrrrrrrrrrrrr'),
+(3, '0abap programs.PNG', '14349', 'image/png', 'rrrrrrrrrrrrrrrrrrrrrrrr'),
+(4, '0sequence.PNG', '53392', 'image/png', 'sssssssssssss'),
+(5, '0sequence.PNG', '53392', 'image/png', 'ttttttttttttttt');
 
 -- --------------------------------------------------------
 
@@ -90,6 +115,12 @@ INSERT INTO `userdetail` (`id`, `Type`, `First_name`, `Last_name`, `Nur_id`, `Em
 --
 
 --
+-- Indexes for table `post_news`
+--
+ALTER TABLE `post_news`
+  ADD PRIMARY KEY (`File_id`);
+
+--
 -- Indexes for table `upload_data`
 --
 ALTER TABLE `upload_data`
@@ -111,6 +142,11 @@ ALTER TABLE `userdetail`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `post_news`
+--
+ALTER TABLE `post_news`
+  MODIFY `File_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `upload_data`
 --

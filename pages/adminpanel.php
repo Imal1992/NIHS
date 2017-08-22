@@ -135,7 +135,31 @@
 
             <div id="formdiv">
                 <h2>News Upload Form</h2>
-                
+                <form enctype="multipart/form-data" action="" method="post">
+                    <!-- First Field is Compulsory. Only JPEG,PNG,JPG Type Image Uploaded.  -->
+                    Image Size Should Be Less Than 2MB.
+                    <hr/>
+
+                    <div id="filediv">
+                        <input name="files[]" type="file" id="file"/>
+                    </div>
+
+                    <br/>
+
+                    <div class="form-group">
+					  <label for="comment">News:</label>
+					  <textarea class="form-control" rows="5" id="comment" name="news" style="min-width: 100%"></textarea>
+					</div>
+
+                    <br/>
+           
+                    <!-- <input type="button" id="add_more" class="upload" value="Add More Photos"/> -->
+                    <input type="submit" value="Post News" name="submit" id="upload" class="upload"/>
+                </form>
+                <br/>
+                <br/>
+                <!-------Including PHP Script here------>
+                <?php include "postNews.php"; ?>
             </div>
            
         </div>
