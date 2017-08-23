@@ -41,7 +41,7 @@
                     <ul class="nav pull-right">
                         <li><a href="adminpanel.php">Post news</a></li>
                         <li><a href="adminpanelImageUpload.php">Upload photos</a></li>
-                        <li><a href="#">Add event</a></li>
+                        <li><a href="adminpanelAddEvent.php">Add event</a></li>
                         <li><a href="adminpanelFileUpload.php">Upload files</a></li>
                         <li><a href="../backend files/logout.php">Sign Out</a></li>
                     </ul>

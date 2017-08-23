@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bootbusiness | Short description about company">
     <meta name="author" content="Your name">
-    <title>SLNA official site | Admin panel image upload page</title>
+    <title>SLNA official site | Admin panel add event page</title>
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap responsive -->
@@ -123,25 +123,38 @@
         <div id="maindiv">
 
             <div id="formdiv">
-                <h2>Photo Upload Form</h2>
-                <form enctype="multipart/form-data" action="" method="post">
+                <h2>Add Event Form</h2>
+                <form action="" method="post">
                     <!-- First Field is Compulsory. Only JPEG,PNG,JPG Type Image Uploaded.  -->
-                    Image Size Should Be Less Than 2MB.
+                    Enter event date and time below.
                     <hr/>
 
-                    <div id="filediv">
-                        <input name="files[]" type="file" id="file"/>
+                    
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
                     </div>
+                            
+                    <br/>
+
+                    <div class="form-group">
+					  <label for="comment">Event Details:</label>
+					  <textarea class="form-control" rows="5" id="comment" name="news" style="min-width: 100%"></textarea>
+					</div>
 
                     <br/>
            
                     <!-- <input type="button" id="add_more" class="upload" value="Add More Photos"/> -->
-                    <input type="submit" value="Upload Photos" name="submit" id="upload" class="upload"/>
+                    <input type="submit" value="Add Event" name="submit" id="upload" class="upload"/>
                 </form>
                 <br/>
                 <br/>
                 <!-------Including PHP Script here------>
-                <?php include "upload.php"; ?>
+                <?php include "addEvent.php"; ?>
             </div>
            
         </div>
@@ -227,5 +240,10 @@
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/boot-business.js"></script>
 <script src="js/image.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+</script>
 </body>
 </html>
