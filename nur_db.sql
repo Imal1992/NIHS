@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 22, 2017 at 06:21 PM
+-- Generation Time: Aug 27, 2017 at 12:49 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -19,6 +19,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `nur_db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `add_event`
+--
+
+CREATE TABLE `add_event` (
+  `Event_id` int(10) NOT NULL,
+  `Event_details` varchar(1000) NOT NULL,
+  `Event_date` varchar(20) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `add_event`
+--
+
+INSERT INTO `add_event` (`Event_id`, `Event_details`, `Event_date`) VALUES
+(1, 'Awrudu', '08/31/2017');
 
 -- --------------------------------------------------------
 
@@ -115,6 +134,12 @@ INSERT INTO `userdetail` (`id`, `Type`, `First_name`, `Last_name`, `Nur_id`, `Em
 --
 
 --
+-- Indexes for table `add_event`
+--
+ALTER TABLE `add_event`
+  ADD PRIMARY KEY (`Event_id`);
+
+--
 -- Indexes for table `post_news`
 --
 ALTER TABLE `post_news`
@@ -142,6 +167,11 @@ ALTER TABLE `userdetail`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `add_event`
+--
+ALTER TABLE `add_event`
+  MODIFY `Event_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `post_news`
 --

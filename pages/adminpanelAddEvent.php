@@ -16,12 +16,12 @@
     <!-- Bootbusiness theme -->
     <link href="../css/boot-business.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/image.css">
+    <!-- Include Bootstrap Datepicker -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
 </head>
 <body>
 
-<?php
-	//$uname = $_SESSION['username']; /* Call the session */
-?>
 <!-- Start: HEADER -->
 <header>
     <!-- Start: Navigation wrapper -->
@@ -124,35 +124,36 @@
 
             <div id="formdiv">
                 <h2>Add Event Form</h2>
+
                 <form action="" method="post">
-                    <!-- First Field is Compulsory. Only JPEG,PNG,JPG Type Image Uploaded.  -->
-                    Enter event date and time below.
+
+                    Enter event details below.
                     <hr/>
 
-                    
+                    <div>
+                        <textarea class="form-control" rows="5" id="comment" name="event" style="min-width: 100%"></textarea>
+                    </div>
+
+                    </br>
+
                     <div class="form-group">
-                        <div class='input-group date' id='datetimepicker1'>
-                            <input type='text' class="form-control" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
+                        <label for="comment">Date:</label>
+                        <div class="date">
+                            <div class="input-group input-append date" id="datePicker">
+                                <input type="text" class="form-control" name="eventdate" />
+                                <span class="input-group-addon add-on"><span class="icon-calendar"></span></span>
+                            </div>
                         </div>
                     </div>
-                            
-                    <br/>
 
-                    <div class="form-group">
-					  <label for="comment">Event Details:</label>
-					  <textarea class="form-control" rows="5" id="comment" name="news" style="min-width: 100%"></textarea>
-					</div>
+                    </br>
 
-                    <br/>
-           
-                    <!-- <input type="button" id="add_more" class="upload" value="Add More Photos"/> -->
                     <input type="submit" value="Add Event" name="submit" id="upload" class="upload"/>
                 </form>
+
                 <br/>
                 <br/>
+
                 <!-------Including PHP Script here------>
                 <?php include "addEvent.php"; ?>
             </div>
@@ -239,11 +240,14 @@
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/boot-business.js"></script>
-<script src="js/image.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $('#datetimepicker1').datetimepicker();
-    });
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#datePicker')
+        .datepicker({
+            format: 'mm/dd/yyyy'
+        });
+});
 </script>
 </body>
 </html>
