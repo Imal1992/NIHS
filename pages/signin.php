@@ -97,7 +97,7 @@ include('../backend files/logincheck.php');
                       </label>
                     </div>
                     <div class="pull-right">
-                      <a href="#">Forgot password?</a>
+                      <a href="forgotpassword.php">Forgot password?</a>
                     </div>
                     <div class="clearfix"></div>
                   </div>

@@ -75,67 +75,43 @@
     <div class="content">
       <div class="container">
         <div class="page-header">
-          <h1>Patnerships <small>Caption for the patnerhsip</small></h1>
+          <h1>Education <small>Education materials</small></h1>
         </div>
-        <div class="row bottom-space">            
-          <div class="span6">
-            <a href="#"><img src="http://placehold.it/200x100" class="bottom-space-less thumbnail"></a>
-            <p>
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-            </p>            
-          </div>
-          <div class="span6">
-            <a href="#"><img src="http://placehold.it/200x100" class="bottom-space-less thumbnail"></a>
-            <p>
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-            </p>            
-          </div>                        
+        <div class="row bottom-space">  
+
+        <?php
+
+            $dir = "D:/Education/University/4th Year/Second Sem/ENH4101 Enhancement IV (Philosophy of Science)/";
+            $results = array();
+
+            // Open a directory, and read its contents
+            if (is_dir($dir)){
+              if ($dh = opendir($dir)){
+                while (($file = readdir($dh)) !== false){
+                  //echo "filename:" . $file . "<br>";
+                  $results[] = $file;
+                }
+                closedir($dh);
+              }
+            }
+
+            //print_r($results);
+            //echo '</br>';
+
+            for( $i = 2; $i<(sizeof($results)); $i++ ) {
+                echo '<a href="#">'.$results[$i].'</a>';
+                echo '</br>';
+             }
+        ?>          
+                        
         </div>
         <div class="row bottom-space">
-          <div class="span6">
-            <a href="#"><img src="http://placehold.it/200x100" class="bottom-space-less thumbnail"></a>
-            <p>
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-            </p>             
-          </div>
-          <div class="span6">
-            <a href="#"><img src="http://placehold.it/200x100" class="bottom-space-less thumbnail"></a>
-            <p>
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-            </p>          
-          </div>                        
+
+                       
         </div>
         <div class="row">
-          <div class="span6">
-            <a href="#"><img src="http://placehold.it/200x100" class="bottom-space-less thumbnail"></a>
-            <p>
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-            </p>           
-          </div>
-          <div class="span6">
-            <a href="#"><img src="http://placehold.it/200x100" class="bottom-space-less thumbnail"></a>
-            <p>
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-              Short discription about your patnet.Short discription about your patnet.
-            </p>             
-          </div>                        
+
+                      
         </div>
       </div>
     </div>
