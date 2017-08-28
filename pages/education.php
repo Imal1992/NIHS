@@ -81,27 +81,15 @@
 
         <?php
 
-            $dir = "D:/Education/University/4th Year/Second Sem/ENH4101 Enhancement IV (Philosophy of Science)/";
-            $results = array();
+          $dir = "files/";
 
-            // Open a directory, and read its contents
-            if (is_dir($dir)){
-              if ($dh = opendir($dir)){
-                while (($file = readdir($dh)) !== false){
-                  //echo "filename:" . $file . "<br>";
-                  $results[] = $file;
-                }
-                closedir($dh);
-              }
-            }
+          $allFiles = scandir($dir);
+          $files = array_diff($allFiles, array('.', '..')); // To remove . and .. 
 
-            //print_r($results);
-            //echo '</br>';
+          foreach($files as $file){
+               echo "<a href='download.php?file=".$file."'>".$file."</a><br>";
+          }
 
-            for( $i = 2; $i<(sizeof($results)); $i++ ) {
-                echo '<a href="#">'.$results[$i].'</a>';
-                echo '</br>';
-             }
         ?>          
                         
         </div>
