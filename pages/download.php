@@ -1,7 +1,7 @@
 <?php
 $filename = basename($_GET['file']);
 // Specify file path.
-$path = 'files/'; // '/uplods/'
+$path = 'fileUploads/'; // '/uploads/'
 $download_file =  $path.$filename;
 
 if(!empty($filename)){

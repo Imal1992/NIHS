@@ -81,7 +81,7 @@
 
         <?php
 
-          $dir = "files/";
+          $dir = "fileUploads/";
 
           $allFiles = scandir($dir);
           $files = array_diff($allFiles, array('.', '..')); // To remove . and .. 
