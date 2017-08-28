@@ -106,7 +106,7 @@
                       </p>
                     </div> -->
                     <div class="span12">
-                      <img src="../img/1.jpg" class="thumbnail">
+                      <img src="../img/7.jpg" class="thumbnail">
                     </div>
                   </div>                  
                 </div>
@@ -122,7 +122,7 @@
                       </p>
                     </div> -->
                     <div class="span12">
-                      <img src="../img/1.jpg" class="thumbnail">
+                      <img src="../img/8.jpg" class="thumbnail">
                     </div>
                   </div>                  
                 </div>
@@ -138,7 +138,7 @@
                       </p>
                     </div> -->
                     <div class="span12">
-                      <img src="../img/1.jpg" class="thumbnail">
+                      <img src="../img/9.jpg" class="thumbnail">
                     </div>
                   </div>                  
                 </div>
@@ -152,18 +152,37 @@
       <!-- End: slider -->
       <!-- Start: OUR MISSION -->
         <div class="container">
-          <div class="span10">
+        <div class="row-fluid">
+          <div class="span4">
             <div class="page-header">
-              <h2>Our Mission</h2>
+              <h2>Our Mission <span class="column-service-icon icon-beaker"></span></h2>
               <p>Sri Lanka Nursing Association, from its inception, has been working towards the enhancement of professionalism in nursing and dedicated to the promotion of standards of nursing services.</p>
               <a href="about_us.php" class="btn">Read more</a>
             </div>
-          </div>  
+          </div> 
+
+          <div class="span4">
+            <div class="page-header">
+              <h2>Executive Committee <span class="column-service-icon icon-eye-open"></h2>
+              <p>Sri Lanka Nurses Association, the only professional organization exists for nurses in Sri Lanka, was established in 1943 as ‘Sri Lanka Trained Nurses Association’ by an English ward sister Ms. L.M. De Silva with 39 members.</p>
+              <a href="about_us.php" class="btn">Read more</a>
+            </div>
+          </div> 
+          <div class="span4">
+            <div class="page-header">
+              <h2>Enhancing Nursing Education <span class="column-service-icon icon-dashboard"></h2>
+              <p>Learn lessons online. It's totally free and you can get a great knowledge on Nursing Education.</p>
+              <a href="about_us.php" class="btn">Read more</a>
+            </div>
+          </div> 
+
+        </div>    
+
           <div class="row-fluid">
             <ul class="thumbnails">
               <li class="span4">
                 <div class="thumbnail">
-                  <img src="../img/1.jpg" alt="product name">
+                  <img src="../img/4.jpg" alt="product name">
                   <div class="caption">
                     <h3>Nursing Career</h3>
                     <p>
@@ -179,7 +198,7 @@
               </li>
               <li class="span4">
                 <div class="thumbnail">
-                  <img src="../img/1.jpg" alt="product name">
+                  <img src="../img/5.jpg" alt="product name">
                   <div class="caption">
                     <h3>What to expect</h3>
                     <p>
@@ -193,7 +212,7 @@
               </li>
               <li class="span4">
                 <div class="thumbnail">
-                  <img src="../img/1.jpg" alt="product name">
+                  <img src="../img/6.jpg" alt="product name">
                   <div class="caption">
                     <h3>Education, training and certification</h3>
                     <p>
