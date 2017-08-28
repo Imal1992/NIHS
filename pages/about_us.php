@@ -15,6 +15,32 @@
     <link href="../css/font-awesome-ie7.css" rel="stylesheet">
     <!-- Bootbusiness theme -->
     <link href="../css/boot-business.css" rel="stylesheet">
+
+            <style>
+              #customers {
+                  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                  border-collapse: collapse;
+                  width: 100%;
+              }
+
+              #customers td, #customers th {
+                  border: 2px solid #000;
+                  padding: 8px;
+              }
+
+              #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+              #customers tr:hover {background-color: #ddd;}
+
+              #customers th {
+                  padding-top: 12px;
+                  padding-bottom: 12px;
+                  text-align: left;
+                  background-color: #3489d7;
+                  color: white;
+              }
+            </style>
+
   </head>
   <body>
     <!-- Start: HEADER -->
@@ -95,11 +121,86 @@
             </br>In 1960s, CNA was named as ‘Sri Lanka Nurses Association’ (SLNA) in accordance with the language policy of the government. In 1973, SLNA, strengthening its international relations with many organizations, obtained the membership in Commonwealth Nurses’ Federation (CNF ). Today, SLNA representing the interests of all professional nurses in Sri Lanka, continues to be the representative for ICN and CNF. Sri Lanka Nursing Association, from its inception, has been working towards the enhancement of professionalism in nursing and dedicated to the promotion of standards of nursing services.</br>
           </div>
           <div class="span5 justify">
-            <br class="span10 offset1">
-              Sri Lanka Nurses Association, the only professional organization exists for nurses in Sri Lanka, was established in 1943 as ‘Sri Lanka Trained Nurses Association’ by an English ward sister Ms. L.M. De Silva with 39 members. Ms. L.M. de Silva was the first president, and ward sister Ms. L.S. Jayasinghe was the first secretary of this professional association. The general purpose of establishing this professional body was to contribute to the advancement of nursing profession in Sri Lanka and to draw attention of the public towards this compassionate service.</br>
-              </br>One contributory factor in increasing the membership in this association was awarding the membership to nurses who graduated from School of Nursing, Colombo which was established in 1939. When Ms. M.A. Jenuideen became the president, she represented the association at a of the International Council of Nurses (ICN) held at Stockhome in Sweden in 1949 and obtained the partial membership to the association in ICN. By this time the name of this organization was changed as ‘Ceylon Nurses Association’ (CNA.</br>
-            </br>In 1953, CNA obtained the fully pledged membership of ICN at ICN conference held at Saint Paul in Brazil. As a result of this historical event, members of CAN had the opportunity to productively attend the ICN conferences held, in Rome (1957), in Frankfurt (1965) and Montrial, Canada (1969).</br>
-            </br>In 1960s, CNA was named as ‘Sri Lanka Nurses Association’ (SLNA) in accordance with the language policy of the government. In 1973, SLNA, strengthening its international relations with many organizations, obtained the membership in Commonwealth Nurses’ Federation (CNF ). Today, SLNA representing the interests of all professional nurses in Sri Lanka, continues to be the representative for ICN and CNF. Sri Lanka Nursing Association, from its inception, has been working towards the enhancement of professionalism in nursing and dedicated to the promotion of standards of nursing services.</br>
+            <h1><small>Members of Sri Lanka Nurses Association </small></h1>
+              
+              <table id="customers">
+                <tr>
+                  <th>Name & the Position</th>
+                  <th>Details</th>
+                </tr>
+                <tr>
+                  <td><strong>PRESIDENT</strong></br>Mr.W.A.Keerthirathne</br>(RN,BScN,PGDDE)</td>
+                  <td>Email: wanasekarak@yahoo.com</br>
+                      Tel: Res: 011-2561029</br>
+                      Mobile:071-8081373</br>
+                      Office:034-2221078</td>
+                  
+                </tr>
+                <tr>
+                  <td><strong>SECRETARY</strong></br>Dr.S.P.Warnakulasooriya</br>(RN,BScN.PhD)</td>
+                  <td>Email: ashara96@yahoo.com</br>
+                      Tel: Res: 011-2578778</br>
+                      Mobile:071-5406688</td>
+                  
+                </tr>
+                <tr>                  
+                  <td><strong>TRESURER</strong></br>Ms.Yasanthi Hettiarachchi</br>(RN,RM)</td>
+                  <td>Email: sgnoyasanthilrh@gail.com</br>
+                      Tel: Office: 011-2693711</br>
+                      Mobile:071-3261293</td>
+                  
+                </tr>                
+                <tr>
+                  <td><strong>VICE PRESIDENT</br>
+                  (Education)</strong></br>Ms.A.M.A.Abeynayake </br>(RN,RM,BScN,MScN)</td>
+                  <td>Email: asokabey@yahoo.com</br>
+                      Mobile:071-8331898</br>
+                      Office:011-2693662</td>
+                  
+                </tr>
+                <tr>
+                  <td><strong>VICE PRESIDENT </br>(Public Health)</strong>
+                  </br>Ms.Amara Chandraseeli</br>(RN,RM,BScN)</td>
+                  <td>Tel: Res: 011-2619410</br>
+                      Mobile:077-4082234</td>
+                  
+                </tr>
+                <tr>
+                  <td><strong>VICE PRESIDENT </br> (Hospital Service)</strong>
+                  </br>Ms.R.A.D.C.Karunaratne</br>(RN,RM,BScN,MScN)</td>
+                  <td>Email: depkaru@yahoo.com</br>
+                      Mobile:077-3456545</br>
+                      Office:011-2682153</td>
+                  
+                </tr>
+                <tr>
+                  <td><strong>ASST. SECRETARY-1</strong></br>Ms. Sujatha Edirisinghe </br>(RN,RM)</td>
+                  <td>Tel: 011-2686828</br>
+                      Mobile:071-8158570</td>
+                  
+                </tr>
+                <tr>
+                  <td><strong>ASST. SECRETARY-2</strong></br>Mr.D.M.Wimalarathne </br>(RN,BScN,MSc)</td>
+                  <td>Email: wimaldisa11@gmail.com</br>
+                      Tel: 011-2568961</br>
+                      Mobile:077-1545296</br>
+                      Office:011-2694177</td>
+                  
+                </tr>
+                <tr>
+                  <td><strong>ASST. TRESURER</strong></br>Mr.T.R.J.Talagala </br>(RN,BScN,MSc)</td>
+                  <td>Email: talagalasenaka@yahoo.com</br>
+                      Mobile:071-4443979</br>
+                      Office:011-2694177</td>
+                  
+                </tr>
+                <tr>
+                  <td><strong>LIBRARIAN</strong></br>Ms.Theja Karunarathne </br>(RN,RM)</td>
+                  <td>Mobile:071-7851463</td>
+                  
+                </tr>
+              </table>
+
           </div>
 
         </article>
