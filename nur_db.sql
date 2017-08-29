@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 29, 2017 at 10:18 AM
+-- Generation Time: Aug 29, 2017 at 11:00 AM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -31,20 +31,19 @@ USE `nur_db`;
 CREATE TABLE IF NOT EXISTS `add_event` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `Event_details` longtext NOT NULL,
-  `Event_date` datetime NOT NULL,
+  `Event_date` varchar(20) NOT NULL,
   UNIQUE KEY `Event_id` (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
 
 --
 -- Dumping data for table `add_event`
 --
 
 INSERT INTO `add_event` (`id`, `Event_details`, `Event_date`) VALUES
-(16, 'fsdf', '2017-08-29 10:16:25'),
-(9, 'Awurudu Ulela', '2017-08-29 00:00:00'),
-(17, 'fsdf', '2017-08-29 10:16:30'),
-(18, 'fsdf', '2017-08-29 10:16:53'),
-(19, 'something', '2017-08-29 10:17:05');
+(27, 'Bhakthi Geetha', '2017-06-21'),
+(28, 'Blood Donation', '2017-07-26'),
+(25, 'Awurudu Uthsawaya ', '2017-04-28'),
+(26, 'Seela Wyaparaya', '2017-05-17');
 
 -- --------------------------------------------------------
 

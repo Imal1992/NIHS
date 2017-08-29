@@ -112,9 +112,9 @@
         ?>
 
         </div>
-
+        </br>
       </div>
-    <div>
+    </div>
     <!-- End: MAIN CONTENT -->
       <!-- Start: FOOTER -->
       <footer>
