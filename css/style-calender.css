@@ -1,0 +1,143 @@
+
+.calendar_simple
+{
+width:100px;
+height:60px;
+background-color:#F4F6F1;
+color:#222222;
+font-size:30px;
+font-family:Arial, Helvetica, sans-serif;
+text-align:center;
+padding:2px;
+margin-left: 30px;
+border:solid 2px #000;
+}
+
+
+
+.calendar_today
+{
+background-color:#FFFFFF;
+border:1px dotted #222222;
+color:#222222;
+font-size:30px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bolder;
+text-align:center;
+padding:2px;
+}
+
+
+
+td.calendar_link{ 
+background-color:#F49073;
+color:#F49073;
+font-size:30px;
+text-align:center;
+padding:2px;
+
+}
+
+
+td.calendar_link a:link,
+td.calendar_link a:visited {
+text-align:center;
+background-color:#F49073;
+color:#222222;
+text-decoration:none;
+font-family:Arial, Helvetica, sans-serif;
+font-size:30px;
+font-weight:normal;
+display:block;
+padding:2px;
+}
+
+
+td.calendar_link a:hover{
+color:#222222;
+background-color:#DDDDDD;
+text-decoration:none;
+font-family:Arial, Helvetica, sans-serif;
+font-size:30px;
+font-weight:normal;
+display:block;
+padding:2px;
+border:solid 2px #000;
+}
+
+td.calendar_todayLinked{
+border:1px dotted #222222;
+background-color:#F49073;
+color:#F49073;
+font-size:30px;
+padding:2px;
+}
+
+
+td.calendar_todayLinked a:link,
+td.calendar_todayLinked a:visited {
+background-color:#FF0000;
+color:#222222;
+text-decoration:none;
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+font-size:30px;
+font-weight:bolder;
+display:block;
+padding:2px;
+}
+
+
+td.calendar_todayLinked a:hover{
+color:#222222;
+background-color:#DDDDDD;
+text-decoration:none;
+font-family:Arial, Helvetica, sans-serif;
+font-size:30px;
+font-weight:bolder;
+padding:2px;
+border:solid 2px #000;
+}
+
+
+.calendar_weekDays{
+color:#FFFFFF;
+font-family:Arial, Helvetica, sans-serif;
+font-size:25px;
+background-color:#3489d7;
+text-align:center;
+padding:10px;
+border:solid 2px #000;
+}
+
+
+td.calendar_heading{ 
+background-color:#3489d7;
+color:#FFFFFF;
+font-size:30px;
+text-align:center;
+padding:15px;
+border:solid 2px #000;
+}
+
+td.calendar_heading a:link,
+td.calendar_heading a:visited {
+background-color:#3489d7;
+color:#FFFFFF;
+text-decoration:none;
+font-family:Arial, Helvetica, sans-serif;
+font-size:30px;
+font-weight:normal;
+display:block;
+padding:2px;
+}
+td.calendar_heading a:hover{
+color:#222222;
+background-color:#DDDDDD;
+text-decoration:none;
+font-family:Arial, Helvetica, sans-serif;
+font-size:30px;
+font-weight:normal;
+display:block;
+padding:2px;
+}

@@ -7,6 +7,7 @@
 
         $event = $_POST['event'];
         $eventdate = $_POST['eventdate'];
+        $eventdate = date('Y-m-d H:i:s');        
         $errors= array();
         
         $query="INSERT into add_event (`Event_details`,`Event_date`) VALUES('$event','$eventdate');";

@@ -15,6 +15,9 @@
   <link href="../css/font-awesome-ie7.css" rel="stylesheet">
   <!-- Bootbusiness theme -->
   <link href="../css/boot-business.css" rel="stylesheet">
+  <style type="text/css" media="screen">
+  @import "../css/style-calender.css";
+</style>
 </head>
 <body>
 <!-- Start: HEADER -->
@@ -75,141 +78,41 @@
     <div class="content">
       <div class="container">
         <div class="page-header">
-          <h1>The Bootbusiness Events</h1>
+          <h1>SLNA events calender</h1>
         </div>
         <div class="row bottom-space">
-          <div class="span1 offset1">
-            <div class="circle">
-              <span class="event-date">Oct<br>10</span>
-            </div>
-          </div>
-          <div class="span9">
-            <h4><a href="#">Link to the event</a></h4>
-            <p>
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-            </p>
-          </div>
+
+        <?php
+
+          include("YourCalendar.php");
+          include("functions.inc.php");
+          mysql_connect('localhost',"root","");
+          mysql_select_db("nur_db");
+
+          function viewDayEvents($result)
+          {
+            $return="";
+            while ($row=mysql_fetch_array($result))
+            {
+              $return.="<strong>".$row['Event_date']."<strong><br />
+                        ".$row['Event_details']."<hr />";
+            }
+            return $return;
+          }
+
+          $cal=new YourCalendar('add_event','Event_date','Event_date,Event_details','viewDayEvents',false,8,2017);
+          echo "<div style=\"float:left\">";
+          echo $cal->getCalendar();
+          echo "</div>";
+          
+          echo "<div style=\"float:left;margin-left:50px;border:1px solid #000000;padding:5px;\">";
+          echo $cal->getDayEvents();
+          echo "</div>";  
+          
+        ?>
+
         </div>
-        <div class="row bottom-space">
-          <div class="span1 offset1">
-            <div class="circle">
-              <span class="event-date">Oct<br>10</span>
-            </div>
-          </div>
-          <div class="span9">
-            <h4><a href="#">Link to the event</a></h4>
-            <p>
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-            </p>
-          </div>
-        </div>
-        <div class="row bottom-space">
-          <div class="span1 offset1">
-            <div class="circle">
-              <span class="event-date">Oct<br>20</span>
-            </div>
-          </div>
-          <div class="span9">
-            <h4><a href="#">Link to the event</a></h4>
-            <p>
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-            </p>
-          </div>
-        </div>
-        <div class="row bottom-space">
-          <div class="span1 offset1">
-            <div class="circle">
-              <span class="event-date">Nov<br>1</span>
-            </div>
-          </div>
-          <div class="span9">
-            <h4><a href="#">Link to the event</a></h4>
-            <p>
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-            </p>
-          </div>
-        </div>
-        <div class="row bottom-space">
-          <div class="span1 offset1">
-            <div class="circle">
-              <span class="event-date">Nov<br>12</span>
-            </div>
-          </div>
-          <div class="span9">
-            <h4><a href="#">Link to the event</a></h4>
-            <p>
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-            </p>
-          </div>
-        </div>
-        <div class="row bottom-space">
-          <div class="span1 offset1">
-            <div class="circle">
-              <span class="event-date">Dec<br>10</span>
-            </div>
-          </div>
-          <div class="span9">
-            <h4><a href="#">Link to the event</a></h4>
-            <p>
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-            </p>
-          </div>
-        </div>
-        <div class="row bottom-space">
-          <div class="span1 offset1">
-            <div class="circle">
-              <span class="event-date">Dec<br>20</span>
-            </div>
-          </div>
-          <div class="span9">
-            <h4><a href="#">Link to the event</a></h4>
-            <p>
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-              Description about your event.Description about your event.Description about your event.
-            </p>
-          </div>
-        </div>
-        <div class="pagination pagination-centered">
-          <ul>
-            <li class="disabled">
-              <a href="#">&laquo;</a>
-            </li>
-            <li class="active">
-              <a href="#">1</a>
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li>
-              <a href="#">4</a>
-            </li>
-            <li>
-              <a href="#">5</a>
-            </li>
-            <li>
-              <a href="#">6</a>
-            </li>
-            <li>
-              <a href="#">&raquo;</a>
-            </li>
-          </ul>
-        </div>
+
       </div>
     <div>
     <!-- End: MAIN CONTENT -->
