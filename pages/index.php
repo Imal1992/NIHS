@@ -1,3 +1,9 @@
+<?php
+
+    //session_start();  /* Start of the session */
+    include ('../backend files/database.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -228,18 +234,57 @@
           </div>
           <div class="row-fluid">
             <ul class="thumbnails">
-              <li class="span4">
-                <div class="thumbnail">
-                  <img src="../img/2.jpg" alt="product name">
-                  <div class="caption">
-                    <h3>Service title</h3>
-                    <p>
-                      Few attractive words about your service.Few attractive words about your service.
-                      Few attractive words about your service.Few attractive words about your service.
-                    </p>
-                  </div>
-                </div>
-              </li>
+
+            	<?php
+
+		          $dir = "postedNews/";
+
+		          $allFiles = scandir($dir);
+		          $files = array_diff($allFiles, array('.', '..')); // To remove . and .. 
+
+		          foreach($files as $file){
+	          	?>
+
+	              <li class="span4">
+	                <div class="thumbnail">
+
+	                  <?php echo '<img src="/NIHS/NIHS/pages/postedNews/'.$file.'" alt="product name">'; 
+
+	                  	$query = "SELECT News FROM post_news WHERE File_name='$file'";
+	                  	$result = $db->query($query);
+	                  	$rowcount = mysqli_num_rows($result);
+
+	                  	if ($rowcount==1){
+	                  		$row = mysqli_fetch_assoc($result);
+	                  		$dbnews = $row['News'];
+	                  	
+	                  ?>
+
+                  		<div class="caption">
+		                    <h3>Site News</h3>
+		                    <p>
+		                      <?php echo $dbnews; ?>
+		                    </p>
+		                </div>
+
+	                  <?php
+
+			            }
+			            else {
+							$error = "No news"; /* If the entered username or password incorrect print this msg  */
+						}
+
+	                  ?>
+	                  
+	                </div>
+	              </li>
+
+	            <?php
+
+		          }
+		        
+		        ?>
+		                  
               <li class="span4">
                 <div class="thumbnail">
                   <img src="../img/2.jpg" alt="product name">
