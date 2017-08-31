@@ -285,31 +285,6 @@
 		        
 		        ?>
 		                  
-              <li class="span4">
-                <div class="thumbnail">
-                  <img src="../img/2.jpg" alt="product name">
-                  <div class="caption">
-                    <h3>Service title</h3>
-                    <p>
-                      Few attractive words about your service.Few attractive words about your service.
-                      Few attractive words about your service.Few attractive words about your service.
-                    </p>
-                  </div>
-
-                </div>
-              </li>
-              <li class="span4">
-                <div class="thumbnail">
-                  <img src="../img/2.jpg" alt="product name">
-                  <div class="caption">
-                    <h3>Service title</h3>
-                    <p>
-                      Few attractive words about your service.Few attractive words about your service.
-                      Few attractive words about your service.Few attractive words about your service.
-                    </p>
-                  </div>
-                </div>
-              </li>
             </ul>
           </div>
         </div>
