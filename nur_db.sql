@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 29, 2017 at 11:00 AM
+-- Generation Time: Aug 31, 2017 at 03:00 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `add_event` (
   `Event_details` longtext NOT NULL,
   `Event_date` varchar(20) NOT NULL,
   UNIQUE KEY `Event_id` (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=30 ;
 
 --
 -- Dumping data for table `add_event`
@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS `add_event` (
 INSERT INTO `add_event` (`id`, `Event_details`, `Event_date`) VALUES
 (27, 'Bhakthi Geetha', '2017-06-21'),
 (28, 'Blood Donation', '2017-07-26'),
+(29, 'Alms Giving', '2017-09-05'),
 (25, 'Awurudu Uthsawaya ', '2017-04-28'),
 (26, 'Seela Wyaparaya', '2017-05-17');
 
@@ -52,24 +53,23 @@ INSERT INTO `add_event` (`id`, `Event_details`, `Event_date`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `post_news` (
-  `File_id` int(10) NOT NULL,
+  `File_id` int(10) NOT NULL AUTO_INCREMENT,
   `File_name` varchar(100) NOT NULL,
   `File_size` varchar(50) NOT NULL,
   `File_type` varchar(50) NOT NULL,
-  `News` varchar(1000) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `News` varchar(1000) NOT NULL,
+  UNIQUE KEY `File_id` (`File_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `post_news`
 --
 
 INSERT INTO `post_news` (`File_id`, `File_name`, `File_size`, `File_type`, `News`) VALUES
-(1, '0abap programs.PNG', '14349', 'image/png', 'rrrrrrrrrrrrrrrrrrrrrrrr'),
-(2, '0abap programs.PNG', '14349', 'image/png', 'rrrrrrrrrrrrrrrrrrrrrrrr'),
-(3, '0abap programs.PNG', '14349', 'image/png', 'rrrrrrrrrrrrrrrrrrrrrrrr'),
-(4, '0sequence.PNG', '53392', 'image/png', 'sssssssssssss'),
-(5, '0sequence.PNG', '53392', 'image/png', 'ttttttttttttttt'),
-(0, '0IMG_1908.jpg', '630401', 'image/jpeg', 'This is Imal');
+(1, '0Capture.PNG', '122618', 'image/png', 'This is Pamba'),
+(2, '01.JPG', '73748', 'image/jpeg', 'this is a news'),
+(4, '02.JPG', '39342', 'image/jpeg', 'SLNA'),
+(6, '03.JPG', '98430', 'image/jpeg', 'dewd');
 
 -- --------------------------------------------------------
 
