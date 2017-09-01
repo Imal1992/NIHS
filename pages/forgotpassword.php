@@ -51,17 +51,72 @@
             <div class="widget-body">
               <div class="center-align">
 
-                <form method="post" class="form-horizontal form-signin-signup"  action = "../backend files/send_link.php" autocomplete="on">
-                  <input type="email" name="Email_address"  placeholder="Email Address" required="required">
-                  <!-- <input type="password" name="password" placeholder="Password" required="required"> -->
-                  <div class="remember-me">
-                    <div class="pull-left">
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                  <input type="submit" value="Submit" name="submit" class="btn btn-primary btn-large">
-                  <input type="reset" name="clear" value="Clear" class="btn btn-primary btn-large">
-                </form>
+                <?php
+                    if(!empty($_POST["forgot-password"])){
+                      $conn = mysqli_connect("localhost", "root", "", "nur_db");
+                      
+                      $condition = "";
+                      if(!empty($_POST[""])) 
+                        $condition = " fname = '" . $_POST["fname"] . "'";
+                      if(!empty($_POST["email"])) {
+                        if(!empty($condition)) {
+                          $condition = " and ";
+                        }
+                        $condition = " email = '" . $_POST["email"] . "'";
+                      }
+                      
+                      if(!empty($condition)) {
+                        $condition = " where " . $condition;
+                      }
+
+                      $sql = "Select * from userdetail " . $condition;
+                      $result = mysqli_query($conn,$sql);
+                      $user = mysqli_fetch_array($result);
+                      
+                      if(!empty($user)) {
+                        require_once("../backend files/forgot-password-recovery-mail.php");
+                      } else {
+                        $error_message = 'No User Found';
+                      }
+                    }
+                  ?>
+                  <link href="demo-style.css" rel="stylesheet" type="text/css">
+
+                  <script>
+                      function validate_forgot() {
+                          if((document.getElementById("fname").value == "") && (document.getElementById("email").value == "")) {
+                            document.getElementById("validation-message").innerHTML = "Login name or Email is required!"
+                            return false;
+                          }
+                          return true
+                        }
+                  </script>
+                  <form name="frmForgot" id="frmForgot" method="post" onSubmit="return validate_forgot();">
+                        <h1>Forgot Password?</h1>
+                          <?php if(!empty($success_message)) { ?>
+                          <div class="success_message"><?php echo $success_message; ?></div>
+                          <?php } ?>
+
+                          <div id="validation-message">
+                            <?php if(!empty($error_message)) { ?>
+                          <?php echo $error_message; ?>
+                          <?php } ?>
+                          </div>
+
+                          <div class="field-group">
+                            <div><label for="username">Username</label></div>
+                            <div><input type="text" name="fname" id="fname" class="input-field"> Or</div>
+                          </div>
+                          
+                          <div class="field-group">
+                            <div><label for="email">Email</label></div>
+                            <div><input type="text" name="email" id="email" class="input-field"></div>
+                          </div>
+                          
+                          <div class="field-group">
+                            <div><input type="submit" name="forgot-password" id="forgot-password" value="Submit" class="form-submit-button"></div>
+                          </div>  
+                  </form>
 
                 <!-- <span><?php echo $error; ?></span> -->
 
