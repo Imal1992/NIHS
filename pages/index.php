@@ -240,9 +240,10 @@
 		          $dir = "postedNews/";
 
 		          $allFiles = scandir($dir);
-		          $files = array_diff($allFiles, array('.', '..')); // To remove . and .. 
+		          $files = array_diff($allFiles, array('.', '..')); // To remove . and ..
+		          $arr = array_slice($files, -3); 
 
-		          foreach($files as $file){
+		          foreach($arr as $file){
 	          	?>
 
 	              <li class="span4">
@@ -286,6 +287,17 @@
 		        ?>
 		                  
             </ul>
+          </div>
+          <div class="row-fluid">
+          <div class="span4">
+          </div> 
+          <div class="span4">
+          </div> 
+          <div class="span4">
+            <div class="page-header">
+              <a href="news.php" class="btn">Read more</a>
+            </div>
+          </div> 
           </div>
         </div>
       <!-- End: PRODUCT LIST -->

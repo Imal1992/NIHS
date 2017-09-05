@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4
--- http://www.phpmyadmin.net
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Aug 31, 2017 at 03:00 PM
--- Server version: 5.6.12-log
--- PHP Version: 5.4.12
+-- Host: 127.0.0.1
+-- Generation Time: Sep 05, 2017 at 12:25 PM
+-- Server version: 5.7.14
+-- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,13 +14,11 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `nur_db`
 --
-CREATE DATABASE IF NOT EXISTS `nur_db` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `nur_db`;
 
 -- --------------------------------------------------------
 
@@ -28,12 +26,11 @@ USE `nur_db`;
 -- Table structure for table `add_event`
 --
 
-CREATE TABLE IF NOT EXISTS `add_event` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `add_event` (
+  `id` int(10) NOT NULL,
   `Event_details` longtext NOT NULL,
-  `Event_date` varchar(20) NOT NULL,
-  UNIQUE KEY `Event_id` (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=30 ;
+  `Event_date` varchar(20) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `add_event`
@@ -52,24 +49,24 @@ INSERT INTO `add_event` (`id`, `Event_details`, `Event_date`) VALUES
 -- Table structure for table `post_news`
 --
 
-CREATE TABLE IF NOT EXISTS `post_news` (
-  `File_id` int(10) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `post_news` (
+  `File_id` int(10) NOT NULL,
   `File_name` varchar(100) NOT NULL,
   `File_size` varchar(50) NOT NULL,
   `File_type` varchar(50) NOT NULL,
-  `News` varchar(1000) NOT NULL,
-  UNIQUE KEY `File_id` (`File_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+  `News` varchar(1000) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `post_news`
 --
 
 INSERT INTO `post_news` (`File_id`, `File_name`, `File_size`, `File_type`, `News`) VALUES
-(1, '0Capture.PNG', '122618', 'image/png', 'This is Pamba'),
 (2, '01.JPG', '73748', 'image/jpeg', 'this is a news'),
 (4, '02.JPG', '39342', 'image/jpeg', 'SLNA'),
-(6, '03.JPG', '98430', 'image/jpeg', 'dewd');
+(8, '0sln.jpg', '298851', 'image/jpeg', 'sl nurses'),
+(9, '04.jpg', '260553', 'image/jpeg', 'Nurses sssss'),
+(10, '07.jpg', '850153', 'image/jpeg', 'Foreign nurse');
 
 -- --------------------------------------------------------
 
@@ -77,7 +74,7 @@ INSERT INTO `post_news` (`File_id`, `File_name`, `File_size`, `File_type`, `News
 -- Table structure for table `upload_data`
 --
 
-CREATE TABLE IF NOT EXISTS `upload_data` (
+CREATE TABLE `upload_data` (
   `File_id` int(10) NOT NULL,
   `File_name` varchar(100) NOT NULL,
   `File_size` varchar(50) NOT NULL,
@@ -97,7 +94,7 @@ INSERT INTO `upload_data` (`File_id`, `File_name`, `File_size`, `File_type`) VAL
 -- Table structure for table `upload_files`
 --
 
-CREATE TABLE IF NOT EXISTS `upload_files` (
+CREATE TABLE `upload_files` (
   `File_id` int(50) NOT NULL,
   `File_name` varchar(100) NOT NULL,
   `File_size` varchar(100) NOT NULL,
@@ -110,17 +107,16 @@ CREATE TABLE IF NOT EXISTS `upload_files` (
 -- Table structure for table `userdetail`
 --
 
-CREATE TABLE IF NOT EXISTS `userdetail` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `userdetail` (
+  `id` int(10) NOT NULL,
   `Type` varchar(25) NOT NULL,
   `First_name` varchar(25) NOT NULL,
   `Last_name` varchar(25) NOT NULL,
   `Nur_id` varchar(25) NOT NULL,
   `Email_address` varchar(50) NOT NULL,
   `Password` varchar(250) NOT NULL,
-  `password_confirmation` varchar(250) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+  `password_confirmation` varchar(250) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `userdetail`
@@ -133,6 +129,47 @@ INSERT INTO `userdetail` (`id`, `Type`, `First_name`, `Last_name`, `Nur_id`, `Em
 (14, 'user', 'Indrarathna', 'Kumbalathara', '46123654632', 'indra@gmail.com', '202cb962ac59075b964b07152d234b70', '202cb962ac59075b964b07152d234b70'),
 (15, 'Admin', 'Chamindu', 'Madhusanka', '8562314', 'chamindu@gmail.com', '202cb962ac59075b964b07152d234b70', '202cb962ac59075b964b07152d234b70');
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `add_event`
+--
+ALTER TABLE `add_event`
+  ADD UNIQUE KEY `Event_id` (`id`);
+
+--
+-- Indexes for table `post_news`
+--
+ALTER TABLE `post_news`
+  ADD UNIQUE KEY `File_id` (`File_id`);
+
+--
+-- Indexes for table `userdetail`
+--
+ALTER TABLE `userdetail`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `add_event`
+--
+ALTER TABLE `add_event`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+--
+-- AUTO_INCREMENT for table `post_news`
+--
+ALTER TABLE `post_news`
+  MODIFY `File_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT for table `userdetail`
+--
+ALTER TABLE `userdetail`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
