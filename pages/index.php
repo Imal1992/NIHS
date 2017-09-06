@@ -290,8 +290,14 @@
           </div>
           <div class="row-fluid">
           <div class="span4">
+          	<div class="page-header">
+              <a href="news.php" class="btn">Read more</a>
+            </div>
           </div> 
           <div class="span4">
+          	<div class="page-header">
+              <a href="news.php" class="btn">Read more</a>
+            </div>
           </div> 
           <div class="span4">
             <div class="page-header">
