@@ -100,7 +100,7 @@
 
         foreach($files as $file){
         ?>
-
+          
           <li class="span4">
             <div class="thumbnail">
 
