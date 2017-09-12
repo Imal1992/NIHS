@@ -100,7 +100,7 @@
             return $return;
           }
 
-          $cal=new YourCalendar('add_event','Event_date','Event_date,Event_details','viewDayEvents',false,8,2017);
+          $cal=new YourCalendar('add_event','Event_date','Event_date,Event_details','viewDayEvents',false);
           echo "<div style=\"float:left\">";
           echo $cal->getCalendar();
           echo "</div>";
