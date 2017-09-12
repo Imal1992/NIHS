@@ -29,7 +29,7 @@
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <div class="container">
-            <a href="index.php" class="brand brand-bootbus">SLNA</a>
+            <a href="index.php" class="brand brand-bootbus"><img src="../img/logo.png" class="img-responsive" width="10%"> SLNA</a>
 
             <!-- Below button used for responsive navigation -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
