@@ -86,7 +86,7 @@
                   <input type="text" name="fname" id="fname" placeholder="First Name" required ="required">
                   <input type="text" name="lname" id="lname" placeholder="Last Name" required ="required">
                   <input type="text" name="nur_id" id="nur_id" placeholder="Nursing ID" required ="required">
-                  <input type="text" name="email" id="email" placeholder="Email" required ="required">
+                  <input type="email" name="email" id="email" placeholder="Email" required ="required">
                   <input type="password" name="password" id="password" placeholder="Password" required ="required">
                   <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Password Confirmation" required ="required">
                   <div>
