@@ -21,6 +21,11 @@
   <link href="../css/font-awesome-ie7.css" rel="stylesheet">
   <!-- Bootbusiness theme -->
   <link href="../css/boot-business.css" rel="stylesheet">
+  <style type="text/css">
+  	.fixedDiv{
+  		height: 150px;
+  	}
+  </style>
 </head>
 <body>
 <!-- Start: HEADER -->
@@ -99,7 +104,7 @@
           <li class="span4">
             <div class="thumbnail">
 
-              <?php echo '<img src="/NIHS/NIHS/pages/postedNews/'.$file.'" alt="product name">'; 
+              <?php echo '<div class="fixedDiv"><img src="/NIHS/NIHS/pages/postedNews/'.$file.'" alt="product name"></div>'; 
 
                 $query = "SELECT News FROM post_news WHERE File_name='$file'";
                 $result = $db->query($query);
