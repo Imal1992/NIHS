@@ -242,13 +242,17 @@
 
             	<?php
 
-		          $dir = "postedNews/";
+            		$newArr = [];
 
-		          $allFiles = scandir($dir);
-		          $files = array_diff($allFiles, array('.', '..')); // To remove . and ..
-		          $arr = array_slice($files, -3); 
+            		$query1 = "SELECT * FROM post_news ORDER BY File_id DESC LIMIT 3";
+            		$result1 = $db->query($query1);
+		          	$rowcount1 = mysqli_num_rows($result1);
 
-		          foreach($arr as $file){
+		          	while(($row1 =  mysqli_fetch_assoc($result1))) {
+					    $newArr[] = $row1['File_name'];
+					}
+
+		          foreach($newArr as $file){
 	          	?>
 
 	              <li class="span4">
