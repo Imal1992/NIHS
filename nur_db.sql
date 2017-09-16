@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 05, 2017 at 12:25 PM
+-- Generation Time: Sep 16, 2017 at 02:05 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -54,7 +54,7 @@ CREATE TABLE `post_news` (
   `File_name` varchar(100) NOT NULL,
   `File_size` varchar(50) NOT NULL,
   `File_type` varchar(50) NOT NULL,
-  `News` varchar(1000) NOT NULL
+  `News` varchar(5000) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -62,8 +62,6 @@ CREATE TABLE `post_news` (
 --
 
 INSERT INTO `post_news` (`File_id`, `File_name`, `File_size`, `File_type`, `News`) VALUES
-(2, '01.JPG', '73748', 'image/jpeg', 'this is a news'),
-(4, '02.JPG', '39342', 'image/jpeg', 'SLNA'),
 (8, '0sln.jpg', '298851', 'image/jpeg', 'sl nurses'),
 (9, '04.jpg', '260553', 'image/jpeg', 'Nurses sssss'),
 (10, '07.jpg', '850153', 'image/jpeg', 'Foreign nurse');
@@ -164,7 +162,7 @@ ALTER TABLE `add_event`
 -- AUTO_INCREMENT for table `post_news`
 --
 ALTER TABLE `post_news`
-  MODIFY `File_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `File_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `userdetail`
 --

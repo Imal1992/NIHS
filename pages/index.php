@@ -252,8 +252,8 @@
 		          	$rowcount1 = mysqli_num_rows($result1);
 
 		          	while(($row1 =  mysqli_fetch_assoc($result1))) {
-					    $newArr[] = $row1['File_name'];
-					}
+      					    $newArr[] = $row1['File_name'];
+      					}
 
 		          foreach($newArr as $file){
 	          	?>

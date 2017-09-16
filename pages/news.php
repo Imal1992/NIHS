@@ -22,9 +22,12 @@
   <!-- Bootbusiness theme -->
   <link href="../css/boot-business.css" rel="stylesheet">
   <style type="text/css">
-  	.fixedDiv{
-  		height: 150px;
-  	}
+    .fixedDiv{
+      height: 200px;
+    }
+    .fixedNewsDiv{
+      height: 100px;
+    }
   </style>
 </head>
 <body>
@@ -88,23 +91,27 @@
     <div class="page-header">
       <h2>Site News</h2>
     </div>
-    <div class="row-fluid">
-      <ul class="thumbnails">
+    
 
-        <?php
+          <?php
 
-        $dir = "postedNews/";
+            $newArr = [];
 
-        $allFiles = scandir($dir);
-        $files = array_diff($allFiles, array('.', '..')); // To remove . and ..
+            $query1 = "SELECT * FROM post_news ORDER BY File_id DESC";
+            $result1 = $db->query($query1);
+            $rowcount1 = mysqli_num_rows($result1);
 
-        foreach($files as $file){
-        ?>
+            while(($row1 =  mysqli_fetch_assoc($result1))) {
+                $newArr[] = $row1['File_name'];
+            }
+
+          foreach($newArr as $file){
+          ?>
           
-          <li class="span4">
-            <div class="thumbnail">
+          
+            <div class="row bottom-space">
 
-              <?php echo '<div class="fixedDiv"><img src="/NIHS/NIHS/pages/postedNews/'.$file.'" alt="product name"></div>'; 
+              <?php echo '<div class="span6"><img src="/NIHS/NIHS/pages/postedNews/'.$file.'" alt="product name"></div>'; 
 
                 $query = "SELECT News FROM post_news WHERE File_name='$file'";
                 $result = $db->query($query);
@@ -116,7 +123,7 @@
                 
               ?>
 
-                <div class="caption">
+                <div class="span6">
                   <h3>Site News</h3>
                   <p>
                     <?php echo $dbnews; ?>
@@ -133,7 +140,7 @@
               ?>
               
             </div>
-          </li>
+          
 
         <?php
 
@@ -141,20 +148,14 @@
       
         ?>
                 
-      </ul>
-    </div>
-    <!-- <div class="row bottom-space">
+      
+<!--     <div class="row bottom-space">
       <div class="span6">
         <a href="#"><img src="http://placehold.it/200x100" class="bottom-space-less thumbnail"></a>
-        <p>
-          Short discription about your patnet.Short discription about your patnet.
-          Short discription about your patnet.Short discription about your patnet.
-          Short discription about your patnet.Short discription about your patnet.
-          Short discription about your patnet.Short discription about your patnet.
-        </p>
+        
       </div>
       <div class="span6">
-        <a href="#"><img src="http://placehold.it/200x100" class="bottom-space-less thumbnail"></a>
+        
         <p>
           Short discription about your patnet.Short discription about your patnet.
           Short discription about your patnet.Short discription about your patnet.
@@ -203,7 +204,7 @@
         </p>
       </div>
     </div> -->
-  </div>
+  </div> 
 </div>
 <!-- End: Main content -->
 <!-- Start: FOOTER -->
