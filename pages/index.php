@@ -23,7 +23,10 @@
     <link href="../css/boot-business.css" rel="stylesheet">
     <style type="text/css">
 	  	.fixedDiv{
-	  		height: 150px;
+	  		height: 200px;
+	  	}
+	  	.fixedNewsDiv{
+	  		height: 100px;
 	  	}
   	</style>
   </head>
@@ -270,7 +273,7 @@
 	                  	
 	                  ?>
 
-                  		<div class="caption">
+                  		<div class="caption fixedNewsDiv">
 		                    <h3>Site News</h3>
 		                    <p>
 		                      <?php echo $dbnews; ?>
