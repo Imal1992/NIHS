@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 16, 2017 at 02:05 PM
+-- Generation Time: Sep 16, 2017 at 06:35 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -79,13 +79,6 @@ CREATE TABLE `upload_data` (
   `File_type` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `upload_data`
---
-
-INSERT INTO `upload_data` (`File_id`, `File_name`, `File_size`, `File_type`) VALUES
-(0, '0Journey 2.jpg', '979130', 'image/jpeg');
-
 -- --------------------------------------------------------
 
 --
@@ -125,7 +118,8 @@ INSERT INTO `userdetail` (`id`, `Type`, `First_name`, `Last_name`, `Nur_id`, `Em
 (12, 'user', 'Imali', 'Sadesha', '636986', 'imali@gmail.com', '202cb962ac59075b964b07152', '202cb962ac59075b964b07152d234b70'),
 (13, 'user', 'Malani', 'Weerakkody', '6134565423', 'malani@gmail.com', '$1$Ne/.S30.$dnui5H6SzbRAiIV3bennH0', '$1$zY..A63.$DJkqh45xneXiGekdd70Ap0'),
 (14, 'user', 'Indrarathna', 'Kumbalathara', '46123654632', 'indra@gmail.com', '202cb962ac59075b964b07152d234b70', '202cb962ac59075b964b07152d234b70'),
-(15, 'Admin', 'Chamindu', 'Madhusanka', '8562314', 'chamindu@gmail.com', '202cb962ac59075b964b07152d234b70', '202cb962ac59075b964b07152d234b70');
+(15, 'Admin', 'Chamindu', 'Madhusanka', '8562314', 'chamindu@gmail.com', '202cb962ac59075b964b07152d234b70', '202cb962ac59075b964b07152d234b70'),
+(17, 'Admin', 'Senith', 'Randula', 'A12045', 'rsenith@gmail.com', '218317c61931b9666ad5b98524a32666', '218317c61931b9666ad5b98524a32666');
 
 --
 -- Indexes for dumped tables
@@ -144,6 +138,18 @@ ALTER TABLE `post_news`
   ADD UNIQUE KEY `File_id` (`File_id`);
 
 --
+-- Indexes for table `upload_data`
+--
+ALTER TABLE `upload_data`
+  ADD UNIQUE KEY `File_id` (`File_id`);
+
+--
+-- Indexes for table `upload_files`
+--
+ALTER TABLE `upload_files`
+  ADD UNIQUE KEY `File_id` (`File_id`);
+
+--
 -- Indexes for table `userdetail`
 --
 ALTER TABLE `userdetail`
@@ -157,17 +163,27 @@ ALTER TABLE `userdetail`
 -- AUTO_INCREMENT for table `add_event`
 --
 ALTER TABLE `add_event`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 --
 -- AUTO_INCREMENT for table `post_news`
 --
 ALTER TABLE `post_news`
-  MODIFY `File_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `File_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+--
+-- AUTO_INCREMENT for table `upload_data`
+--
+ALTER TABLE `upload_data`
+  MODIFY `File_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `upload_files`
+--
+ALTER TABLE `upload_files`
+  MODIFY `File_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `userdetail`
 --
 ALTER TABLE `userdetail`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

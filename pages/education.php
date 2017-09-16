@@ -77,7 +77,7 @@
         <div class="page-header">
           <h1>Education <small>Education materials</small></h1>
         </div>
-        <div class="row bottom-space">  
+        <div class="container">  
 
         <?php
 
@@ -92,14 +92,6 @@
 
         ?>          
                         
-        </div>
-        <div class="row bottom-space">
-
-                       
-        </div>
-        <div class="row">
-
-                      
         </div>
       </div>
     </div>
