@@ -15,6 +15,19 @@
   <link href="../css/font-awesome-ie7.css" rel="stylesheet">
   <!-- Bootbusiness theme -->
   <link href="../css/boot-business.css" rel="stylesheet">
+
+<script>
+function validateForm() {
+    var x = document.forms["form-horizontal form-signin-signup"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}
+</script>
+
 </head>
 <body>
 <!-- Start: HEADER -->
@@ -82,11 +95,11 @@
             <h4 class="widget-header"><i class="icon-gift"></i> Create an Account</h4>
             <div class="widget-body">
               <div class="center-align">
-                <form class="form-horizontal form-signin-signup" action="../backend files/regdata.php" method="post" autocomplete="on">
+                <form class="form-horizontal form-signin-signup" name="form-horizontal form-signin-signup" action="../backend files/regdata.php" onsubmit="return validateForm();" method="post" autocomplete="on">
                   <input type="text" name="fname" id="fname" placeholder="First Name" required ="required">
                   <input type="text" name="lname" id="lname" placeholder="Last Name" required ="required">
-                  <input type="text" name="nur_id" id="nur_id" placeholder="Nursing ID" required ="required">
-                  <input type="email" name="email" id="email" placeholder="Email" required ="required">
+                  <input type="text" name="nur_id" id="nur_id" placeholder="Nursing ID" required ="required" pattern="(!@#$%^&*()+=-[]\\;,./{}|:<>?~_)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+                  <input type="text" name="email" id="email" placeholder="Email" required ="required">
                   <input type="password" name="password" id="password" placeholder="Password" required ="required">
                   <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Password Confirmation" required ="required">
                   <div>
