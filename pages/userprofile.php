@@ -1,5 +1,11 @@
-<?php session_start();  /* Start of the session */
- if(!isset($_SESSION['isLoggedIn'])){
+<?php 
+	header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+	header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
+
+	session_start();  /* Start of the session */
+
+ 	if(!isset($_SESSION['isLoggedIn'])){
+
 	 	header("location: signin.php");
 	 }
 ?>
@@ -44,29 +50,15 @@
                 </button>
                 <!-- Start: Primary navigation -->
                 <div class="nav-collapse collapse">
-                     <ul class="nav pull-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active-link" data-toggle="dropdown">Home<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-header">PRODUCTS</li>
-                                <li><a href="about_us.php">About us</a></li>
-                                <li <!-><a href="institutes.php">Institutes</a></li>
-                               
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="education.php">Education</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="photo_gallery.php">Photo Gallery</a></li>
-                        <li><a href="contact_us.php">Contact us</a></li>
-                        <li><a href="signin.php">Sign in</a></li>
-                        <li><a href="signup.php">Join now</a></li>
+                	                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li><a></a></li>
+                        <li><a></a></li>
+                        <li><a></a></li>
+                        <li><a></a></li>
                         <li><a href="../backend files/logout.php">Sign Out</a></li>
-
                     </ul>
+                </div>
 
                 </div>
             </div>
@@ -85,11 +77,11 @@
             <div class="row bottom-space">
                 <div class="span12">
                     <div class="page-header">
-                        <h1>Service <small>Caption for the service</small></h1>
+                        <h1>Welcome : <?php $uname = $_SESSION['username']; ?> <small>SLNA official web page</small></h1>
                     </div>
                 </div>
                 <div class="span12 center-align">
-                    <img src="http://placehold.it/800x300" class="thumbnail product-snap">
+                    <img src="http://www.colombopage.com/imgs_13B/MR12172013H_3.jpg">
                 </div>
             </div>
             <div class="row bottom-space">
@@ -98,29 +90,7 @@
 
                 </div>
             </div>
-            <div class="row">
-                <div class="span10 offset1">
-                    <hr>
-                    <div class="span3">
-                        <p>
-                            Ready to start the innovation?
-                        </p>
-                        <a class="btn btn-large btn-block" href="#">Try now</a>
-                    </div>
-                    <div class="span3">
-                        <p>
-                            Got confused?
-                        </p>
-                        <a class="btn btn-large btn-block" href="contact_us.php">Contact us</a>
-                    </div>
-                    <div class="span3">
-                        <p>
-                            Check frequently asked question
-                        </p>
-                        <a class="btn btn-large btn-block" href="../Additional%20Pages/faq.html">FAQ</a>
-                    </div>
-                </div>
-            </div>
+
         </article>
         <!-- End: Service description -->
     </div>
@@ -129,11 +99,6 @@
 <!-- End: Main content -->
 <!-- Start: FOOTER -->
 <footer>
-    <div class="container">
-        <div class="row">
-        </div>
-    </div>
-    <hr class="footer-divider">
     <div class="container">
         <p>
             &copy; 2017 SLNA All Rights Reserved.
